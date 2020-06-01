@@ -266,6 +266,39 @@
 
             <p style="float:clear;">Developed by <a href="https://www.facebook.com/buzzfeedtasty"> Purple Inc.</a> .</p>
         </div>
+
+        <div class="signinpop" id="signpop">
+            <img src="img/close.png" style="float:right;" height="30px" width="30px" onclick="document.getElementById('signpop').style.display='none';">
+            <form action="#" name="signin" method="post">
+                <br> <br>
+                <h3>User ID (Email) :</h3>
+                <input type="text" name="userid" size="25px">
+                <h3>Password :</h3>
+                <input type="text" name="spwd" size="25px">
+                <br>
+                <input type="image" src="img/signin.jpg" height="20px" width="100px">
+                <br><br>
+                <h3>Not a member? Register for free:</h3>
+                <a href="javascript:void(0)" onclick="document.getElementById('regipop').style.display='block';"><b>&lt &lt Register &gt &gt</b> </a>
+            </form>
+        </div><!-- signinpop end -->
+
+        <div class="regipop" id="regipop">
+            <img src="img/close.png" style="float:right;" height="30px" width="30px" onclick="document.getElementById('regipop').style.display='none';">
+            <form action="php/signin.php" name="signin" method="post">
+                <br> <br>
+                <h3>Name:</h3>
+                <input type="text" name="username" size="25px">
+                <h3>Email:</h3>
+                <input type="text" name="useremail" size="25px">
+                <h3>Password :</h3>
+                <input type="text" name="pwd1" size="25px">
+                <h3>Confirm Password:</h3>
+                <input type="text" name="pwd2" size="25px">
+                <br><br>
+                <input type="image" src="img/register.jpg" height="25px" width="150px">
+            </form>
+        </div>
     </div>
 </body>
 </html>
