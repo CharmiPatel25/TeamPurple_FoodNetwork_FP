@@ -1,0 +1,62 @@
+<config Version="3.2" bSavedFiles="True">
+  <slideshow>
+    <slideshowStyle slideshowName="blindsshow">
+      <width>1025</width>
+      <height>350</height>
+      <scaleMode>scaleToFill</scaleMode>
+      <firstSlide>0</firstSlide>
+      <randomPlay>false</randomPlay>
+      <autoPlay>true</autoPlay>
+      <showShadow>true</showShadow>
+      <loopForever>true</loopForever>
+      <loop>0</loop>
+      <showBorder>true</showBorder>
+      <borderSize>1</borderSize>
+      <borderColor>0xffffff</borderColor>
+      <effectMode>blind</effectMode>
+      <interval>3000</interval>
+      <effectSpeed>500</effectSpeed>
+      <totalSlices>50</totalSlices>
+      <sliceInterval>50</sliceInterval>
+      <effect strType="assemble" strCaption="fade">false</effect>
+      <effect strType="assemble" strCaption="blindLeft">true</effect>
+      <effect strType="assemble" strCaption="blindRight">true</effect>
+      <effect strType="assemble" strCaption="blindDownLeft">true</effect>
+      <effect strType="assemble" strCaption="blindDownRight">true</effect>
+      <effect strType="assemble" strCaption="blindUpLeft">true</effect>
+      <effect strType="assemble" strCaption="blindUpRight">true</effect>
+      <effect strType="assemble" strCaption="blindUpDownLeft">true</effect>
+      <effect strType="assemble" strCaption="blindUpDownRight">true</effect>
+      <showCaption>false</showCaption>
+      <textCSS>.title {font-size:12px;font-weight:bold;font-family:Arial;color:#ffffff;line-height:200%;} .alt {font-size:12px;font-family:Arial;color:#ffffff;}</textCSS>
+      <captionPosition>bottom</captionPosition>
+      <captionBarColor>0x333333</captionBarColor>
+      <captionBarOpacity>0.8</captionBarOpacity>
+      <captionBarPadding>8</captionBarPadding>
+      <captionAlign>center</captionAlign>
+      <showNavArrows>true</showNavArrows>
+      <autoHideNavArrows>true</autoHideNavArrows>
+      <showNavDots>true</showNavDots>
+      <navDotsBottom>6</navDotsBottom>
+      <navDotsAlign>right</navDotsAlign>
+      <navDotsLeftRightMargin>16</navDotsLeftRightMargin>
+    </slideshowStyle>
+  </slideshow>
+  <items>
+    <item StrFile="abhilashayummyslideshow_files\food1.jpg" StrTitle="food1" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food2.jpg" StrTitle="food2" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food3.jpg" StrTitle="food3" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food4.jpg" StrTitle="food4" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food5.jpg" StrTitle="food5" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food6.jpg" StrTitle="food6" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food7.jpg" StrTitle="food7" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food8.jpg" StrTitle="food8" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food9.jpg" StrTitle="food9" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food10.jpg" StrTitle="food10" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food11.jpg" StrTitle="food11" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food12.jpeg" StrTitle="food12" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food13.jpg" StrTitle="food13" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food14.jpg" StrTitle="food14" StrDescription="" bWebLink="False"/>
+    <item StrFile="abhilashayummyslideshow_files\food15.jpg" StrTitle="food15" StrDescription="" bWebLink="True" StrURL="#" StrTarget=""/>
+  </items>
+</config>
