@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #E4C0AC;
+}
+
+    a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+h1 {
+    text-align: center;
+    color: #463232;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #463232;
+}
+
+.fb {
+    float: left;
+    z-index: 100;
+    top: 50%;
+    width: 200px;
+    height: 50px;
+    left: -147px;
+    background: red;
+    position: fixed;
+}
+
+    .fb:hover {
+        animation: followfb 1s 1 forwards;
+        -webkit-animation: followfb 1s 1 forwards; 
+    }
