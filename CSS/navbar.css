@@ -1,0 +1,68 @@
+#navbarwrap {
+    /* Spans the width of the page */
+    height: 60px;
+    /* Ensures there is no space between sides of the screen and the menu */
+    z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+}
+.navbar {
+    height: 50px;
+    padding: 0;
+    margin: auto;
+    margin-left: 10px;
+    position: absolute; /* Ensures that the menu doesn’t affect other elements */
+}
+    .navbar li {
+        height: auto;
+        width: 171.5px; /* Each menu item's width */
+        float: left; /* This lines up the menu items horizontally */
+        text-align: center; /* All text is placed in the center of the box */
+        list-style: none; /* Removes the default styling (bullets) for the list */
+        font: normal bold 12px/1.2em Arial, Verdana, Helvetica;
+        padding: 0;
+        margin: 0;
+        background-color: #876363;
+    }
+    .navbar a {
+        padding: 18px 0; /* Adds a padding on the top and bottom so the text appears centered vertically */
+        border-left: 1px solid #B59797; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+        border-right: 1px solid #694949; /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+        text-decoration: none; /* Removes the default hyperlink styling. */
+        color: white; /* Text color is white */
+        display: block;
+    }
+    .navbar li:hover {
+        background-color: #B59797;
+    }
+
+    .navbar a:hover {
+        background-color: #B59797;
+    }
+
+    .navbar li ul {
+        display: none; /* Hides the drop-down menu */
+        height: auto;
+        margin: 0; /* Aligns drop-down box underneath the menu item */
+        padding: 0; /* Aligns drop-down box underneath the menu item */
+    }
+
+    .navbar li:hover ul {
+        display: block; /* Displays the drop-down box when the menu item is hovered over */
+    }
+
+    .navbar li ul li {
+        background-color: #B59797;
+    }
+
+        .navbar li ul li a {
+            border-left: 1px solid #694949;
+            border-right: 1px solid #694949;
+            border-top: 1px solid #D1BABA;
+            border-bottom: 1px solid #694949;
+        }
+
+            .navbar li ul li a:hover {
+                background-color: #9B7676;
+            }

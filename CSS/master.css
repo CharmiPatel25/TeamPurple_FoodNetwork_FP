@@ -36,3 +36,43 @@ h2, h3, h4, h5, h6 {
         animation: followfb 1s 1 forwards;
         -webkit-animation: followfb 1s 1 forwards; 
     }
+
+@keyframes followfb {
+    from {
+        left: -150px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes followfb /*Safari and Chrome*/
+{
+    from {
+        left: -150px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+.up {
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 170px;
+    background-color: #260707;
+    z-index: -1;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 25px;
+    min-width: 1000px;
+    background-color: #F5E9E9;
+    width: 1050px;
+    padding-top: 10px;
+}
