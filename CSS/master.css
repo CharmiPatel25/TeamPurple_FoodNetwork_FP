@@ -76,3 +76,278 @@ h2, h3, h4, h5, h6 {
     width: 1050px;
     padding-top: 10px;
 }
+
+.home {
+    margin-top: 1%;
+    position: absolute;
+    left: 1%;
+    top: 1%;
+}
+
+.signin {
+    margin-top: 1%;
+    position: absolute;
+    right: 2%;
+    top: 1%;
+}
+
+#upsideul li {
+    padding: 0px;
+    display: inline;
+    padding-right: 10px;
+}
+
+
+#heading {
+    text-align: center;
+    margin: 5px;
+}
+
+.slideshow {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 350px;
+    width: 98%;
+    border: double;
+    border-color: #C4AAAA;
+}
+
+    .slideshow img {
+        height: 350px;
+        width: 1029px;
+    }
+
+.passage {
+    margin: 3px;
+    float: left;
+    height: 685px;
+    width: 770px;
+}
+
+    .passage h1 {
+        color: #463232;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .passage p {
+        color: #694D4D;
+    }
+
+    .passage a {
+        color: #97822F;
+    }
+
+
+.partition {
+    background-color: #B59797;
+    height: 4px;
+    width: 100%;
+    opacity: 0.6;
+    float: left;
+}
+
+.mpass {
+    margin: 4px 20px;
+    height: 177px;
+    width: 335px;
+    float: right;
+    border: double;
+    border-color: #C4AAAA;
+    text-align: center;
+}
+
+    .mpass h2 {
+        margin: 0px;
+    }
+
+.rpass1 {
+    margin: 4px 5px;
+    margin-left: 25px;
+    height: 590px;
+    width: 470px;
+    float: left;
+    border: double;
+    border-color: #C4AAAA;
+}
+
+.rpass2 {
+    margin: 4px 5px;
+    height: 590px;
+    width: 240px;
+    float: left;
+    border: double;
+    border-color: #C4AAAA;
+}
+
+    .rpass2 h2, h3, h4, h5 {
+        margin: 0px;
+    }
+
+    .rpass2 img {
+        width: 235px;
+        height: 165px;
+        border: groove;
+        border-color: #C4AAAA;
+    }
+
+
+
+.pages img {
+    height: 40;
+    width: 40;
+    float: right;
+    opacity: 0.8;
+}
+
+    .pages img:hover {
+        opacity: 1;
+    }
+
+.pass1 {
+    margin: 1px;
+    height: 420px;
+    width: 454px;
+    float: left;
+    border: double;
+    border-color: #C4AAAA;
+}
+
+    .pass1 h5 {
+        color: #463232;
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+    }
+
+.pass2 {
+    margin: 1px;
+    height: 500px;
+    width: 300px;
+    float: right;
+    border: double;
+    border-color: #C4AAAA;
+}
+
+
+.pass3 {
+    margin: 1px;
+    height: 250px;
+    width: 222px;
+    float: left;
+    border: double;
+    border-color: #C4AAAA;
+}
+
+
+.pass4 {
+    margin: 1px;
+    height: 250px;
+    width: 222px;
+    float: left;
+    border: double;
+    border-color: #C4AAAA;
+}
+
+
+.pass5 {
+    margin: 1px;
+    height: 170px;
+    width: 300px;
+    float: right;
+    border: double;
+    border-color: #C4AAAA;
+}
+
+
+#passageside {
+    float: right;
+    padding: 5px;
+    height: 330px;
+    width: 255px;
+    margin-left: 5px;
+}
+
+#boxes {
+    border: double;
+    border-color: #C4AAAA;
+    text-align: center;
+    background-color: #B59797;
+    color: #463232;
+}
+
+    #boxes p {
+        margin: 0px;
+        color: #694D4D;
+    }
+
+.bottom {
+    margin-top: 700px;
+    color: #B0D5DA;
+    background-color: #876363;
+    height: 180px;
+}
+
+    .bottom ul {
+        margin-top: 0;
+    }
+
+    .bottom li {
+        list-style: none;
+    }
+
+    .bottom p {
+        padding: 5px;
+        text-align: right;
+        color: #B59797;
+    }
+
+.signinpop {
+    height: 250px;
+    width: 400px;
+    display: none;
+    position: absolute;
+    top: 190px;
+    background-color: #FFFCE1;
+    z-index: 1000;
+    border: inset;
+    border-color: #C4AAAA;
+    text-align: center;
+    float: inherit;
+    margin-left: 25%;
+}
+
+
+.regipop {
+    height: 300px;
+    width: 400px;
+    display: none;
+    position: absolute;
+    top: 190px;
+    background-color: #FFFCE1;
+    z-index: 1055;
+    border: inset;
+    border-color: #C4AAAA;
+    text-align: center;
+    float: inherit;
+    margin-left: 25%;
+}
+
+.signinpop a {
+    color: #97822F;
+}
+
+    .signinpop a:hover {
+        color: #876363;
+    }
+
+
+.artlist {
+    border: groove;
+    border-color: #C4AAAA;
+}
+
+    .artlist h2 {
+        margin: 0px;
+    }

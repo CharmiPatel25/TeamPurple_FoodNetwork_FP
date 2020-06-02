@@ -1,19 +1,20 @@
 <html>
-
 <head>
     <title>Food Network</title>
     <link rel="stylesheet" type="text/css" href="CSS/master.css">
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
     <link rel="stylesheet" type="text/css" href="CSS/slideshow.css">
     <script type="text/javascript" src="js/slideshow.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
-    <link href="CSS/lightbox.css" rel="stylesheet" type="text/css" />
-    <script src="js/lightbox-2.6.min.js"></script>
-    <script src="js/jQuery.min.js"></script>
+
 </head>
 <body background="img/bg.jpg" bgproperties="fixed">
     <div class="fb">
         <a href="https://www.facebook.com/buzzfeedtasty"><img src="img/fb.jpg" width="200px" height="50px"></a>
     </div>
+
+
+    <div class="up"></div>
+
     <ul class="home" id="upsideul">
         <li><a href="index.html"><img src="img/home.png" height="70" width="70"><div style="margin:0px;margin-left:10px;">HOME</div></a></li>
     </ul>
@@ -21,45 +22,12 @@
     <ul class="signin" id="upsideul">
         <li><a href="javascript:void(0)" onclick="document.getElementById('signpop').style.display='block';">SIGN IN</a></li>
         <li><a href="contactus.html">CONTACT US</a></li>
-        <li><a href="aboutus.html">ABOUT FOOD NETWORK</a></li>
+        <li><a href="aboutus.html">ABOUT YUMMY RECIPIES</a></li>
     </ul><br />
-    <div class="up"></div>
     <div class="container">
+
         <div id="heading"><img src="img/logo.png"></div>
-        <!--start slideshow -->
-        <div class="slideshow">
-            <div id="slideshowabhi" style="position:relative;width:1025px;height:350px;">
-                <div class="-slideswrap">
-                    <a class="-link" id="slideshowabhi-slide-1" style=";visibility:visible">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-1" src="img/ss/food1.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-2" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-2" src="img/ss/food2.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-3" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-3" src="img/ss/food3.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-4" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-4" src="img/ss/food4.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-5" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-5" src="img/ss/food5.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-6" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-6" src="img/ss/food6.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-7" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-7" src="img/ss/food7.jpg" alt="">
-                    </a>
-                </div>
-                <div class="-dotswrap">
-                    <div id="slideshowabhi-dot-1" class="-dot"></div><div id="slideshowabhi-dot-2" class="-dot"></div><div id="slideshowabhi-dot-3" class="-dot"></div><div id="slideshowabhi-dot-4" class="-dot"></div><div id="slideshowabhi-dot-5" class="-dot"></div><div id="slideshowabhi-dot-6" class="-dot"></div><div id="slideshowabhi-dot-7" class="-dot"></div>
-                </div>
-                <img id="slideshowabhi-buttonback" class="-buttonback" src="img/left.png">
-                <img id="slideshowabhi-buttonforward" class="-buttonforward" src="img/right.png">
-            </div>
-        </div>
-        <!-- end slideshow -->
+        <div class="partition"></div>
         <!-- Start Navbar section -->
         <div id="navbarwrap">
             <ul class="navbar">
@@ -111,65 +79,61 @@
         <!-- End Navbar section -->
         <!--passage start -->
         <div class="passage">
-            <div class="pass1">
-                <img src="img/pass1.png" height="70px" width="70px" style="float:left;">
-                <h1>RECIPE OF THE DAY</h1>
-                <img src="img/food1.jpg" height="200px" width="447px"
-                     style="border: inset;	border-color: #C4AAAA;">
-                <h5>Name:</h5>
-                <h5>Region:</h5>
-                <h5>Veg/Non-veg:</h5>
-                <h5>Main ingredient:</h5>
-                <h5>Test:</h5>
-                <a href="recipe.html">See more...</a>
-            </div>
 
-            <div class="pass5">
-                <img src="img/pass5.png" height="50px" width="50px" style="float:left; margin-top:20px;">
-                <h1 style="margin:0px;">DO YOU KNOW</h1>
-                <p>honey is the only natural food which never goes off<br>Get more did you know facts visit our articles</p>
-                <a href="artclist.html">&lt &lt DID YOU KNOW &gt &gt </a>
-            </div>
+            <h1>RECIPE</h1>
+            <div class="partition"></div>
+            <div class="rpass1">
+                <img src="img/yogurt.jpg" height="165px" width="200px" style="float:right;margin:5px;border: inset; border-color: #C4AAAA;">
+                <div>
+                    <img src="img/ingre.png" height="40px" width="50px" style="float:left;;">
+                    <h2>INGREDIENTS</h2>
+                    <ul>
+                        <li>2 cups vanilla yogurt</li>
+                        <li>8 blackberries</li>
+                        <li>
+                            1 cup granola
 
-            <div class="pass2">
-                <img src="img/food2.jpg" height="200px" width="295px"
-                     style="border: inset;	border-color: #C4AAAA;">
-                <h1>SHORT & QUICK</h1>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <hr>
+                <h2><img src="img/procedure.png" height="50px" width="50px" style="float:left;">PREPARATION METHOD</h2>
                 <p>
-                    <img src="img/pass2.png" height="50px" width="50px" style="float:left;">
-                    Mix together a package of cream cheese and a log of goat cheese until thoroughly combined,
-                    then use your hands to roll chunks of the cheese into small balls.
-                    Combine chopped parsley, thyme, bacon bits and chopped walnuts on a plate
-                    and roll each cheese ball in the coating until covered. Pop a stick into each
-                    cheese ball and serve atop dried apple slices for easier eating,
-                    with additional apple slices on the side for dipping.
-                    <a href="recipe.html">See more...</a>
+                    In a large glass, layer 1 cup yogurt, 1/2 cup granola and 4 blackberries. Repeat layers.
+
                 </p>
+                <hr>
+                <h2 style="margin:0px;">Comment</h2>
+                <form>
+                    <p style="margin:0px;">Not a member? <a href="#">Regiter</a> now to comment.</p>
+                    <textarea cols="20" rows="3"></textarea>
+                    <input type="image" src="img/click.png" height="50px" width="50px" style="margin-top:10px;">
+                </form>
+
+            </div>
+            <div class="rpass2">
+                <h2>you will also like this:</h2>
+                <div>
+                    <a href="#"><h5>Chip Dip</h5></a>
+                    <img src="img/food3.jpg">
+                </div>
+                <div>
+                    <a href="#"><h5>Mushroom Salad</h5></a>
+                    <img src="img/food4.jpg">
+                </div>
+                <div>
+                    <a href="#"><h5>Pulav</h5></a>
+                    <img src="img/food5.jpg">
+                </div>
             </div>
 
-            <div class="pass3">
-                <h1>QUICK TIP</h1>
-                <p>
-                    <img src="img/pass3.png" height="50px" width="50px" style="float:left;">To prevent pieces of cut apple or pear from turning
-                    black, squeeze a little lime juice on them or
-                    sprinkle a little bit of crushed mustard.<br>
-                    Get more Tips visit our articles<br>
-                    <a href="tipslist.html">&lt &lt Cooking Tips &gt &gt </a>
-                </p>
-            </div>
-            <div class="pass4">
-                <img src="img/pass4.png" height="50px" width="50px" style="float:left; margin-top:10px;">
-                <h1 style="margin:0px;">HEALTH FUNDA</h1>
-                <p style="margin:2px;">
-                    Studies show that eating a proper breakfast is one of the most positive things you can do if you are trying to lose weight. Breakfast skippers tend to gain weight.<br>Get Yummy recipes for your breakfast visit:<br>
-                    <a href="artclist.html">&lt &lt Breakfast Recipes &gt &gt</a>
-                </p>
-            </div>
-
-
+            <div class="partition"></div>
         </div>
         <!--passage end -->
+
         <div id="passageside">
+
             <div id="boxes">
                 <form>
                     <img src="img/magni.png" height="40" width="40" style="float:left;">
@@ -233,7 +197,7 @@
 
             <ul style="float:left;">
                 <li><a href="#"><b>Recipes</b></a></li>
-                <li><a href="rMenu.html">Breakfast</a></li>
+                <li><a href="rBreakfastMenu.html">Breakfast</a></li>
                 <li><a href="rMenu.html">Lunch</a></li>
                 <li><a href="rMenu.html">Snacks</a></li>
                 <li><a href="rMenu.html">Dinner</a></li>
@@ -271,9 +235,8 @@
             <br>
             <br>
 
-            <p style="float:clear;">Developed by <a href="https://www.facebook.com/buzzfeedtasty"> Purple Inc.</a> .</p>
+            <p style="float:clear;">Developed by <a href="https://www.facebook.com/"> Team Purple</a> .</p>
         </div>
-
         <div class="signinpop" id="signpop">
             <img src="img/close.png" style="float:right;" height="30px" width="30px" onclick="document.getElementById('signpop').style.display='none';">
             <form action="#" name="signin" method="post">

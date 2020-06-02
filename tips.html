@@ -1,127 +1,255 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="css/tips.css">
     <title>Food Network</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/master.css">
+    <link rel="stylesheet" type="text/css" href="CSS/slideshow.css">
+    <script type="text/javascript" src="js/slideshow.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <link href="CSS/lightbox.css" rel="stylesheet" type="text/css" />
+    <script src="js/lightbox-2.6.min.js"></script>
+    <script src="js/jQuery.min.js"></script>
 </head>
-<body background="img/bg.jpg" bgproperties="fixed">
-    <div class="fb">
-        <a href="https://www.facebook.com/buzzfeedtasty"><img src="img/fb.jpg" width="200px" height="50px"></a>
-    </div>
-    <ul class="home" id="upsideul">
-        <li><a href="index.html"><img src="img/home.png" height="70" width="70"><div style="margin:0px;margin-left:10px;">HOME</div></a></li>
-    </ul>
+<body>
 
-    <ul class="signin" id="upsideul">
-        <li><a href="javascript:void(0)" onclick="document.getElementById('signpop').style.display='block';">SIGN IN</a></li>
-        <li><a href="contactus.html">CONTACT US</a></li>
-        <li><a href="aboutus.html">ABOUT FOOD NETWORK</a></li>
-    </ul><br />
-    <div class="up"></div>
-    <div class="container">
-        <div id="heading"><img src="img/logo.png"></div>
-        <!--start slideshow -->
-        <div class="slideshow">
-            <div id="slideshowabhi" style="position:relative;width:1025px;height:350px;">
-                <div class="-slideswrap">
-                    <a class="-link" id="slideshowabhi-slide-1" style=";visibility:visible">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-1" src="img/ss/food1.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-2" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-2" src="img/ss/food2.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-3" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-3" src="img/ss/food3.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-4" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-4" src="img/ss/food4.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-5" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-5" src="img/ss/food5.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-6" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-6" src="img/ss/food6.jpg" alt="">
-                    </a>
-                    <a class="-link" id="slideshowabhi-slide-7" style="">
-                        <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-7" src="img/ss/food7.jpg" alt="">
-                    </a>
-                </div>
-                <div class="-dotswrap">
-                    <div id="slideshowabhi-dot-1" class="-dot"></div><div id="slideshowabhi-dot-2" class="-dot"></div><div id="slideshowabhi-dot-3" class="-dot"></div><div id="slideshowabhi-dot-4" class="-dot"></div><div id="slideshowabhi-dot-5" class="-dot"></div><div id="slideshowabhi-dot-6" class="-dot"></div><div id="slideshowabhi-dot-7" class="-dot"></div>
-                </div>
-                <img id="slideshowabhi-buttonback" class="-buttonback" src="img/left.png">
-                <img id="slideshowabhi-buttonforward" class="-buttonforward" src="img/right.png">
+
+    <body background="img/bg.jpg" bgproperties="fixed">
+        <div class="fb">
+            <a href="https://www.facebook.com/buzzfeedtasty"><img src="img/fb.jpg" width="200px" height="50px"></a>
+        </div>
+        <ul class="home" id="upsideul">
+            <li><a href="index.html"><img src="img/home.png" height="70" width="70"><div style="margin:0px;margin-left:10px;">HOME</div></a></li>
+        </ul>
+
+        <ul class="signin" id="upsideul">
+            <li><a href="javascript:void(0)" onclick="document.getElementById('signpop').style.display='block';">SIGN IN</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="aboutus.html">ABOUT FOOD NETWORK</a></li>
+        </ul><br />
+        <div class="up"></div>
+        <div class="container">
+            <div id="heading"><img src="img/logo.png"></div>
+            
+    <!--start slideshow -->
+    <div class="slideshow">
+        <div id="slideshowabhi" style="position:relative;width:1025px;height:350px;">
+            <div class="-slideswrap">
+                <a class="-link" id="slideshowabhi-slide-1" style=";visibility:visible">
+                    <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-1" src="img/ss/food1.jpg" alt="">
+                </a>
+                <a class="-link" id="slideshowabhi-slide-2" style="">
+                    <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-2" src="img/ss/food2.jpg" alt="">
+                </a>
+                <a class="-link" id="slideshowabhi-slide-3" style="">
+                    <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-3" src="img/ss/food3.jpg" alt="">
+                </a>
+                <a class="-link" id="slideshowabhi-slide-4" style="">
+                    <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-4" src="img/ss/food4.jpg" alt="">
+                </a>
+                <a class="-link" id="slideshowabhi-slide-5" style="">
+                    <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-5" src="img/ss/food5.jpg" alt="">
+                </a>
+                <a class="-link" id="slideshowabhi-slide-6" style="">
+                    <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-6" src="img/ss/food6.jpg" alt="">
+                </a>
+                <a class="-link" id="slideshowabhi-slide-7" style="">
+                    <img class="-slideimg" onload="this.slide_ready=1;" id="slideshowabhi-image-7" src="img/ss/food7.jpg" alt="">
+                </a>
             </div>
+            <div class="-dotswrap">
+                <div id="slideshowabhi-dot-1" class="-dot"></div><div id="slideshowabhi-dot-2" class="-dot"></div><div id="slideshowabhi-dot-3" class="-dot"></div><div id="slideshowabhi-dot-4" class="-dot"></div><div id="slideshowabhi-dot-5" class="-dot"></div><div id="slideshowabhi-dot-6" class="-dot"></div><div id="slideshowabhi-dot-7" class="-dot"></div>
+            </div>
+            <img id="slideshowabhi-buttonback" class="-buttonback" src="img/left.png">
+            <img id="slideshowabhi-buttonforward" class="-buttonforward" src="img/right.png">
         </div>
-        <!-- end slideshow -->
+    </div> 
+    <!-- end slideshow -->
 
-        <!-- Start Navbar section -->
-        <div id="navbarwrap">
-            <ul class="navbar">
-
-
-                <li><a href="index.html" title="home" style="height:24px;line-height:24px;">Home</a></li>
+    <!-- Start Navbar section -->
+    <div id="navbarwrap">
+        <ul class="navbar">
 
 
-                <li>
-                    <a href="#" style="height:24px;line-height:24px;"><span>Recipes</span></a>
-
-                    <ul>
-                        <li><a href="rMenu.html">Breakfast</a></li>
-                        <li><a href="rMenu.html">Lunch</a></li>
-                        <li><a href="rMenu.html">Snacks</a></li>
-                        <li><a href="rMenu.html">Dinner</a></li>
-                        <li><a href="rMenu.html">Sweets</a></li>
-                        <li><a href="rMenu.html">Starters</a></li>
-                        <li><a href="rMenu.html">Quick Recipes</a></li>
-                    </ul>
-                </li>
+            <li><a href="index.html" title="home" style="height:24px;line-height:24px;">Home</a></li>
 
 
-                <li>
-                    <a href="#" style="height:24px;line-height:24px;"><span>Articles</span></a>
+            <li>
+                <a href="#" style="height:24px;line-height:24px;"><span>Recipes</span></a>
 
-                    <ul>
-                        <li><a href="artclist.html">Health</a></li>
-                        <li><a href="artclist.html">Flavors</a></li>
-                    </ul>
-                </li>
-
-
-                <li>
-                    <a href="#" style="height:24px;line-height:24px;"><span>Tips</span></a>
-
-                    <ul>
-                        <li><a href="tipslist.html">Cooking Tricks</a></li>
-                        <li><a href="tipslist.html">Safety Tips</a></li>
-                    </ul>
-                </li>
+                <ul>
+                    <li><a href="rBreakfastMenu.html">Breakfast</a></li>
+                    <li><a href="rMenu.html">Lunch</a></li>
+                    <li><a href="rMenu.html">Snacks</a></li>
+                    <li><a href="rMenu.html">Dinner</a></li>
+                    <li><a href="rMenu.html">Sweets</a></li>
+                    <li><a href="rMenu.html">Starters</a></li>
+                    <li><a href="rMenu.html">Quick Recipes</a></li>
+                </ul>
+            </li>
 
 
-                <li><a href="contactus.html" style="height:24px;line-height:24px;">Contact us</a></li>
+            <li>
+                <a href="#" style="height:24px;line-height:24px;"><span>Articles</span></a>
 
-                <li><a href="aboutus.html" style="height:24px;line-height:24px;">About us</a></li>
-            </ul>
-        </div>
-        <!-- End Navbar section -->
+                <ul>
+                    <li><a href="artclist.html">Health</a></li>
+                    <li><a href="artclist.html">Flavors</a></li>
+                </ul>
+            </li>
 
-        <div id="main">
 
-            <h1>TIPS, TRICKS &AMP; HACKS </h1>
+            <li>
+                <a href="#" style="height:24px;line-height:24px;"><span>Tips</span></a>
 
-            <article>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                      <div class="flip-box-front">
-                        <img src="img/cake_mix.jpg" alt="cake mix">
-                      </div>
-                      <div class="flip-box-back">
-                        <h2>Cake mixes are an easy way to whip up a dessert when you don’t feel like baking something from scratch. If you happened to stock up on packaged cake mix during a sale and haven’t used it all before the date on the box, don’t throw it away. You can still safely use the mix for four to five months beyond the expiry date as long as it’s been stored in a cool, dry place.</h2>
-                      </div>
+                <ul>
+                    <li><a href="tipslist.html">Cooking Tricks</a></li>
+                    <li><a href="tipslist.html">Safety Tips</a></li>
+                </ul>
+            </li>
+
+
+            <li><a href="contactus.html" style="height:24px;line-height:24px;">Contact us</a></li>
+
+            <li><a href="aboutus.html" style="height:24px;line-height:24px;">About us</a></li>
+        </ul>
+    </div>
+    <!-- End Navbar section -->
+
+    <div id="main">
+
+        <h1>TIPS, TRICKS &AMP; HACKS </h1>
+
+        <div class="flip-box-container">
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="img/cake_mix.png" alt="cake mix">
                     </div>
-                  </div>
-            </article>
-           
+                    <div class="flip-box-back">
+                        <p>Cake mixes are an easy way to whip up a dessert when you do not feel like baking something from scratch. If you happened to stock up on packaged cake mix during a sale and have not used it all before the date on the box, do not throw it away. You can still safely use the mix for four to five months beyond the expiry date as long as it has been stored in a cool, dry place.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="img/herbs.png" alt="cake mix">
+                    </div>
+                    <div class="flip-box-back">
+                        <p>When it comes to fresh salads or garnishes for pasta, fresh tends to be best. Otherwise, it is what you have got on hand. The important thing to remember is that dried herbs are more concentrated than the fresh variety, so adjust recipes accordingly. Typically it is a three to one ratio from fresh to dried, so if a recipe calls for a tablespoon of fresh herbs, reach for a teaspoon of the dried stuff instead. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="img/tomatoes.png" alt="cake mix">
+                    </div>
+                    <div class="flip-box-back">
+                        <p>Like beans and vegemite, tomatoes are an excellent source of thiamine. Not only will a diet rich in tomatoes make you less attractive to bugs, but rubbing tomato juice on a bug bite is said to reduce pain and itchiness. </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        <div class="flip-box-container">
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="img/egg.png" alt="cake mix">
+                    </div>
+                    <div class="flip-box-back">
+                        <p>Are you in favour of butter or olive oil when it comes to the perfect fried egg? Do you like them soft or with a slightly charred edge? No matter how you like them, making fried eggs exactly how you want to eat them is a beautiful thing. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="img/honey.png" alt="cake mix">
+                    </div>
+                    <div class="flip-box-back">
+                        <p>Store-bought honey comes with a best before date, but it does not really spoil. The look of it can change over time, but it is still safe to eat. The key to keeping it in its original state is storing it on the countertop in its original jar or bottle and not placing it in a dark cupboard or pantry. If it does crystallize, you can fix it by placing the bottle into a bowl of hot tap water until it is clear and golden once again.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="img/spinach.png" alt="cake mix">
+                    </div>
+                    <div class="flip-box-back">
+                        <p>Like lettuce, spinach tends to turn before we can use it. When those leaves start to look watery, do not throw them out. Freeze them for use in soups, stews or smoothies, or if you are thinking about entertaining, transform them into an amazing vegetarian pate instead. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h1>KNIFE SKILLS</h1>
+
+        <h3>We hate to break it to you, but every time you cook, you will be using a knife. So, it is best that you learn how to use one safely and efficiently! But do not worry, the more practice you get, the more comfortable you will feel with using your knife, and the better you will be at cooking.</h3>
+
+        <h4>7 Tips to Show Your Knife Who is Boss</h4>
+
+        <p>
+            Once you get the hang of using your knife properly, you will be saved from lots of frustration and chopping injuries, plus you will save on lots of time! But first, let us go through 7 tips to help you get to know your knife better, and then you will be on your way to chopping like a pro.
+        </p>
+
+        <ol>
+            <li>
+                <h4>START WITH A SHARP KNIFE</h4>
+                
+                <p>Sharp knives are pretty darn scary. But did you know that sharp knives cause less injury than dull knives? That is because when you have a dull knife, it makes it harder to slice through ingredients, which means the blade is more likely to slip off the food and hurt you. <br> <br> <br>
+
+                    A sharp knife, on the other hand, can cut swiftly through most ingredients without a lot of strain or pressure from you. Not only does this reduce potential injuries, it will also cut down on the chopping time. Keep knives sharp by taking them to a professional sharpener, using a honing steel between uses, and storing them on magnetic strip or a block. Remember: Never put them in the dishwasher!
+                 </p>
+            </li>
+
+            <li>
+                <h4>CREATE A STABLE SURFACE</h4>
+                
+                <p>
+                    A lot of cutting boards do not have a good grip on countertops. To make this cutting surface have more grip, fold a damp kitchen towel and put under the cutting board. You will see that the cutting board is now more stable, and it will not slip and slide as you handle your sharp knife and round veggies!
+                </p>
+            </li>
+
+            <li>
+                <h4>GET THE RIGHT GRIP ON YOUR KNIFE</h4>
+                
+                <p>
+                    You want to be able to have the most control over your knife when you chop, so it is important that you hold your knife properly. Do not hold your knife at the back of the handle, because it will not give you leverage over the blade. And holding your knife with your index finger pointed out also gives you less stability when chopping. The best way to get the right grip on your knife is to wrap your fingers around the knife where the blade and the handle meet, as if you were shaking someone’s hand. This is most stable way to hold your knife, and is perfect for safe and efficient chopping.
+                </p>
+            </li>
+
+            <li>
+                <h4>LEARN THE MOST COMMON CHOPPING TECHNIQUES</h4>
+                
+                <p>
+                    Before you start chopping away, it’s best to understand ways that you can chop ingredients. Keep in mind that the back of your knife is where most of the force comes from, so that’s where you want to keep the ingredients. In our Knife Basics 101 video below, we’ll show you how the proper way to execute 3 common chopping techniques.
+                </p>
+            </li>
+
+            <li>
+                <h4>PROTECT YOUR FINGERS WHILE CHOPPING</h4>
+                
+                <p>
+                    It’s normal to be scared of chopping your fingers off while using a knife, but there’s a way to prevent any of that from happening. Make a knuckle guard to protect your fingers by placing your fingertips on the ingredient, and then curling them up. Your knuckles will extend past your fingertips and act as a guide for your knife and keep your fingers safe from slicing.
+                </p>
+            </li>
+
+        </ol>
+
+    </div>
 
 
 
