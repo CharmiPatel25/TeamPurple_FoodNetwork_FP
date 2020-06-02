@@ -1,0 +1,16 @@
+#navbarwrap {
+    /* Spans the width of the page */
+    height: 60px;
+    /* Ensures there is no space between sides of the screen and the menu */
+    z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+}
+.navbar {
+    height: 50px;
+    padding: 0;
+    margin: auto;
+    margin-left: 10px;
+    position: absolute; /* Ensures that the menu doesn’t affect other elements */
+}
