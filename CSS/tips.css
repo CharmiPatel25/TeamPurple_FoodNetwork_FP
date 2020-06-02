@@ -43,6 +43,7 @@
 
   .flip-box-front img {
       width: 100%;
+      height: 100%;
   }
   
   .flip-box-back {
@@ -55,7 +56,7 @@
   .flip-box-back p {
       font-size: 1em;
       font-weight: bold;
-      line-height: 1.5em;
+      line-height: 1.3em;
       text-align: justify;
       padding: 0.8em;
   }
