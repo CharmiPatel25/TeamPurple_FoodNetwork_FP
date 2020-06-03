@@ -67,8 +67,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto 1rem;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #5a5d63;
+    border-bottom: 1px solid #5a5d63;
     padding: 1rem 0;
   }
 
@@ -84,4 +84,31 @@
     margin-top: .2rem;
     text-rendering: optimizeLegibility;
     text-align: justify;
+  }
+
+  .content-block {
+    margin: 3em;
+    text-align: justify;
+  }
+
+  .content-block h3 {
+    padding: 2em;
+    text-align: center;
+    background-color: #ffffff;
+  }
+
+  .content-block p {
+    padding-left: auto;
+    padding-right: auto;
+    line-height: 1.5em;
+    font-size: 1.2em;
+  }
+
+  ol.skill-list {
+    padding-bottom: 2em;
+  }
+
+  ol.skill-list h4 {
+    font-size: 1.2em;
+    padding: 1.1em;
   }
