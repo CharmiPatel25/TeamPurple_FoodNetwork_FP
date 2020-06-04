@@ -34,11 +34,11 @@
         display: block;
     }
     .navbar li:hover {
-        background-color: #B59797;
+        background-color: #e84118;
     }
 
     .navbar a:hover {
-        background-color: #B59797;
+        background-color: #e84118;
     }
 
     .navbar li ul {
@@ -53,16 +53,16 @@
     }
 
     .navbar li ul li {
-        background-color: #B59797;
+        background-color: #e84118;
     }
 
         .navbar li ul li a {
-            border-left: 1px solid #694949;
-            border-right: 1px solid #694949;
-            border-top: 1px solid #D1BABA;
-            border-bottom: 1px solid #694949;
+            border-left: 1px solid #b33939;
+            border-right: 1px solid #b33939;
+            border-top: 1px solid #ff7979;
+            border-bottom: 1px solid #b33939;
         }
 
             .navbar li ul li a:hover {
-                background-color: #9B7676;
+                background-color: #c23616;
             }
