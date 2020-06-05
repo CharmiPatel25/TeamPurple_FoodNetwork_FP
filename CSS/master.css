@@ -145,10 +145,10 @@ h2, h3, h4, h5, h6 {
 
 
 .partition {
-    background-color: #B59797;
+    background-color: #b33939;
     height: 4px;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.7;
     float: left;
 }
 
@@ -158,7 +158,7 @@ h2, h3, h4, h5, h6 {
     width: 335px;
     float: right;
     border: double;
-    border-color: #C4AAAA;
+    border-color: #b33939;
     text-align: center;
 }
 
@@ -177,7 +177,7 @@ h2, h3, h4, h5, h6 {
     width: 470px;
     float: left;
     border: double;
-    border-color: #C4AAAA;
+    border-color: #b33939;
 }
 
 .rpass2 {
@@ -186,7 +186,7 @@ h2, h3, h4, h5, h6 {
     width: 240px;
     float: left;
     border: double;
-    border-color: #C4AAAA;
+    border-color: #b33939;
 }
 
     .rpass2 h2, h3, h4, h5 {
@@ -197,7 +197,7 @@ h2, h3, h4, h5, h6 {
         width: 235px;
         height: 165px;
         border: groove;
-        border-color: #C4AAAA;
+        border-color: #b33939;
     }
 
 
