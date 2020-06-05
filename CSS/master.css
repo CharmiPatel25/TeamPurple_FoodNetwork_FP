@@ -166,6 +166,10 @@ h2, h3, h4, h5, h6 {
         margin: 0px;
     }
 
+    .mpass h4 {
+        margin: 0;
+    }
+
 .rpass1 {
     margin: 4px 5px;
     margin-left: 25px;
