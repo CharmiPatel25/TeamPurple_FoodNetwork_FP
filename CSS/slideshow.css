@@ -52,10 +52,10 @@
 
     #slideshowabhi .-dotswrap {
         position: absolute;
-        left: 40px;
-        top: 8px;
+        bottom: 1.5em;
+        left: 45%;
         white-space: nowrap;
-        text-align: right;
+        text-align: center;
         z-index: 12000;
         border: 0;
         margin: 0;
@@ -72,15 +72,15 @@
         display: inline-block;
         cursor: pointer !important;
         border-color: #CCCCCC;
-        background-color: #B59797
+        background-color: #ff7979
     }
 
         #slideshowabhi .-dot:hover {
-            background-color: #876363
+            background-color: #b33939
         }
 
         #slideshowabhi .-dot.-on {
-            background-color: #876363
+            background-color: #b33939
         }
 
     #slideshowabhi .-link {

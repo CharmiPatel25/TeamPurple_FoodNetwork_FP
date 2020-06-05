@@ -4,7 +4,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #E4C0AC;
+    color: #000000;
 }
 
     a:hover {
@@ -14,11 +14,11 @@ a {
 
 h1 {
     text-align: center;
-    color: #463232;
+    color: #000000;
 }
 
 h2, h3, h4, h5, h6 {
-    color: #463232;
+    color: #000000;
 }
 
 .fb {
@@ -59,12 +59,12 @@ h2, h3, h4, h5, h6 {
 }
 
 .up {
-    opacity: 0.5;
+    opacity: 0.8;
     position: absolute;
     top: 0px;
     width: 100%;
     height: 170px;
-    background-color: #260707;
+    background-color: #c23616;
     z-index: -1;
 }
 
@@ -75,7 +75,7 @@ h2, h3, h4, h5, h6 {
     background-color: white;
     width: 1050px;
     padding-top: 10px;
-    height: 1000px;
+    max-height: 200%;
 }
 
 .home {
@@ -111,7 +111,7 @@ h2, h3, h4, h5, h6 {
     height: 350px;
     width: 98%;
     border: double;
-    border-color: #C4AAAA;
+    border-color: #b33939;
 }
 
     .slideshow img {
@@ -126,18 +126,21 @@ h2, h3, h4, h5, h6 {
     width: 770px;
 }
 
-    .passage h1 {
-        color: #463232;
+    .passage h2 {
+        color: #000000;
         text-align: center;
         margin: 15px;
     }
 
     .passage p {
-        color: #694D4D;
+        color: #000000;
+        margin-left: 1.1em;
+        margin-right: 1.1em;
     }
 
     .passage a {
-        color: #97822F;
+        color: #0652DD;
+        padding-left: 1.1em;
     }
 
 
@@ -163,10 +166,14 @@ h2, h3, h4, h5, h6 {
         margin: 0px;
     }
 
+    .mpass h4 {
+        margin: 0;
+    }
+
 .rpass1 {
     margin: 4px 5px;
     margin-left: 25px;
-    height: 590px;
+    max-height: 600px;
     width: 470px;
     float: left;
     border: double;
@@ -175,7 +182,7 @@ h2, h3, h4, h5, h6 {
 
 .rpass2 {
     margin: 4px 5px;
-    height: 590px;
+    max-height: 600px;
     width: 240px;
     float: left;
     border: double;
@@ -212,14 +219,14 @@ h2, h3, h4, h5, h6 {
     width: 454px;
     float: left;
     border: double;
-    border-color: #C4AAAA;
+    border-color: #b33939;
 }
 
     .pass1 h5 {
-        color: #463232;
+        color: #000000;
         margin: 0px;
-        padding: 0px;
         font-size: 20px;
+        padding-left: 1.2em;
     }
 
 .pass2 {
@@ -228,7 +235,7 @@ h2, h3, h4, h5, h6 {
     width: 300px;
     float: right;
     border: double;
-    border-color: #C4AAAA;
+    border-color: #b33939;
 }
 
 
@@ -238,7 +245,7 @@ h2, h3, h4, h5, h6 {
     width: 222px;
     float: left;
     border: double;
-    border-color: #C4AAAA;
+    border-color: #b33939;
 }
 
 
@@ -248,7 +255,7 @@ h2, h3, h4, h5, h6 {
     width: 222px;
     float: left;
     border: double;
-    border-color: #C4AAAA;
+    border-color: #b33939;
 }
 
 
@@ -258,7 +265,7 @@ h2, h3, h4, h5, h6 {
     width: 300px;
     float: right;
     border: double;
-    border-color: #C4AAAA;
+    border-color: #b33939;
 }
 
 
@@ -272,22 +279,23 @@ h2, h3, h4, h5, h6 {
 
 #boxes {
     border: double;
-    border-color: #C4AAAA;
+    border-color: #ff7979;
     text-align: center;
-    background-color: #B59797;
-    color: #463232;
+    background-color: rgba(194, 54, 22, 0.7);
+    color: #000000;
 }
 
     #boxes p {
         margin: 0px;
-        color: #694D4D;
+        color: #000000;
     }
 
 .bottom {
     margin-top: 700px;
     color: #B0D5DA;
-    background-color: #876363;
+    background-color: rgba(194, 54, 22, 0.7);
     height: 180px;
+    
 }
 
     .bottom ul {
@@ -301,7 +309,7 @@ h2, h3, h4, h5, h6 {
     .bottom p {
         padding: 5px;
         text-align: right;
-        color: #B59797;
+        color: #000000;
     }
 
 .signinpop {
@@ -313,7 +321,7 @@ h2, h3, h4, h5, h6 {
     background-color: #FFFCE1;
     z-index: 1000;
     border: inset;
-    border-color: #C4AAAA;
+    border-color: #b33939;
     text-align: center;
     float: inherit;
     margin-left: 25%;
@@ -329,7 +337,7 @@ h2, h3, h4, h5, h6 {
     background-color: #FFFCE1;
     z-index: 1055;
     border: inset;
-    border-color: #C4AAAA;
+    border-color: #b33939;
     text-align: center;
     float: inherit;
     margin-left: 25%;
@@ -346,7 +354,7 @@ h2, h3, h4, h5, h6 {
 
 .artlist {
     border: groove;
-    border-color: #C4AAAA;
+    border-color: #b33939;
 }
 
     .artlist h2 {
