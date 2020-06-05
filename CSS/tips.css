@@ -94,7 +94,8 @@
   .content-block h3 {
     padding: 2em;
     text-align: center;
-    background-color: #ffffff;
+    
+    background-color: rgba(194, 54, 22, 0.7);
   }
 
   .content-block p {
