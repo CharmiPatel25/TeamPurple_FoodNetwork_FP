@@ -1,96 +1,461 @@
+<!doctype html>
 <html>
 <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <style>
+        .progress-wrap {
+            text-align: center;
+            font-size: 10px;
+            color: white;
+            margin: 0 0 20px 0;
+        }
+
+        progress {
+            width: 100%;
+            margin: 0 0 5px 0;
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Food Network</title>
+    <link rel="stylesheet" type="text/css" href="CSS/master.css">
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <link rel="stylesheet" type="text/css" href="CSS/slideshow.css">
 </head>
-<body>
-    <form accept-charset="UTF-8" action="#" class="pro-form" id="pro-form" method="post">
 
-        <h1>Progress Form</h1>
+<body background="img/apple.png" bgproperties="fixed">
+    <div class="fb">
+        <a href="https://www.facebook.com/buzzfeedtasty"><img src="img/fb1.jpg" width="200px" height="50px"></a>
+    </div>
+    <div class="up"></div>
 
-        <div class="progress-wrap">
-            <progress max="100" value="0" id="progress"></progress>
-            <div class="progress-message" id="progress-message">The form, it wants you.</div>
-        </div>
+    <ul class="home" id="upsideul">
+        <li><a href="index.html"><img src="img/home1.png" height="70" width="70"><div style="margin:0px;margin-left:10px;">HOME</div></a></li>
+    </ul>
 
-        <input id="subscription_plan_id" name="subscription[plan_id]" type="hidden" value="1">
+    <ul class="signin" id="upsideul">
+        <li><a href="javascript:void(0)" onclick="document.getElementById('signpop').style.display='block';">SIGN IN</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+        <li><a href="aboutus.html">ABOUT FOOD NETWORK</a></li>
+    </ul><br />
+         <div class="container">
+             <div id="heading"><img src="img/logo1.jpg"></div>
+             <div class="partition"></div>
+             <!-- Start Navbar section -->
+             <div id="navbarwrap">
+                 <ul class="navbar">
 
-        <input id="subscription_stripe_card_token" name="subscription[stripe_card_token]" type="hidden">
 
-        <div class="field">
-            <label for="card_name">Name on Card</label>
-            <br>
-            <input id="card_name" required="required" type="text">
-        </div>
+                     <li><a href="index.html" title="home" style="height:24px;line-height:24px;">Home</a></li>
 
-        <div class="field">
-            <label for="card_address_1">Street Address</label>
-            <br>
-            <input id="card_address_1" required="required" type="text">
-            <input id="card_address_2" type="text">
-        </div>
 
-        <div class="field">
-            <label for="card_zip">Zip Code</label>
-            <br>
-            <input id="card_zip" maxlength="10" pattern="[0-9]*" required="required" type="text">
-        </div>
+                     <li>
+                         <a href="#" style="height:24px;line-height:24px;"><span>Recipes</span></a>
 
-        <div class="field">
-            <label for="card_number">Credit Card Number</label>
-            <br>
-            <input id="card_number" pattern="[0-9]*" required="required" type="number">
-        </div>
+                         <ul>
+                             <li><a href="rBreakfastMenu.html">Breakfast</a></li>
+                             <li><a href="rMenu.html">Lunch</a></li>
+                             <li><a href="rDinnerMenu.html">Dinner</a></li>
 
-        <div class="field">
-            <label for="card_code">Security Code on Card (CVV)</label>
-            <br>
-            <input id="card_code" required="required" type="text">
-        </div>
+                             <!--
+                    <li><a href="rMenu.html">Sweets</a></li>
+                    <li><a href="rMenu.html">Starters</a></li>
+                    <li><a href="rMenu.html">Quick Recipes</a></li>
+                    <li><a href="rMenu.html">Snacks</a></li>-->
+                         </ul>
+                     </li>
 
-        <div class="field">
-            <label for="card_month">Card Expiration</label>
-            <br>
-            <select id="card_month">
-                <option value="1">1 - January</option>
-                <option value="2">2 - February</option>
-                <option value="3">3 - March</option>
-                <option value="4">4 - April</option>
-                <option value="5">5 - May</option>
-                <option value="6">6 - June</option>
-                <option value="7">7 - July</option>
-                <option value="8">8 - August</option>
-                <option value="9">9 - September</option>
-                <option value="10">10 - October</option>
-                <option value="11">11 - November</option>
-                <option value="12">12 - December</option>
-            </select>
 
-            <select id="card_year">
-                <option value="2012">2012</option>
-                <option value="2013">2013</option>
-                <option value="2014">2014</option>
-                <option value="2015">2015</option>
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
-            </select>
+                     <li>
+                         <a href="artclist.html" style="height:24px;line-height:24px;"><span>Articles</span></a>
+                     </li>
 
-        </div>
 
-        <div class="actions">
+                     <li>
+                         <a href="#" style="height:24px;line-height:24px;"><span>Tips</span></a>
 
-            <input name="commit" type="submit" value="Subscribe" class="button">
-        </div>
+                         <ul>
+                             <li><a href="tipslist.html">Cooking Tricks</a></li>
+                             <li><a href="tipslist.html">Safety Tips</a></li>
+                         </ul>
+                     </li>
 
-    </form>
+
+                     <li><a href="contactus.html" style="height:24px;line-height:24px;">Contact us</a></li>
+
+                     <li><a href="aboutus.html" style="height:24px;line-height:24px;">About us</a></li>
+                 </ul>
+             </div>
+             <!-- End Navbar section -->
+             <div class="passage">
+                 <form name="f1" accept-charset="UTF-8" action="#" class="pro-form" id="pro-form" method="post">
+
+                     <div class="progress-wrap">
+                         <progress max="100" value="0" id="progress"></progress>
+                         <div class="progress-message" id="progress-message">The form, it wants you.</div>
+                     </div>
+
+
+                     <h2>Register</h2>
+                     <input type="text" id="name" placeholder="Name" required="required"><br />
+                     <input type="email" id="email" placeholder="Email" required="required"><br />
+                     <input type="text" id="hobbies" placeholder="Hobbies" required="required"><br />
+
+                     Gender :
+                     Male<input type="radio" name="option" id="maleRd" value="Male">
+                     Female<input type="radio" name="option" id="femaleRd" value="Female"><br />
+                     <label for="Birth_month" id="birthdate">Bith Date</label>
+                     <br>
+                     <select id="birth_month" required="required">
+                         <option value="1">1 - January</option>
+                         <option value="2">2 - February</option>
+                         <option value="3">3 - March</option>
+                         <option value="4">4 - April</option>
+                         <option value="5">5 - May</option>
+                         <option value="6">6 - June</option>
+                         <option value="7">7 - July</option>
+                         <option value="8">8 - August</option>
+                         <option value="9">9 - September</option>
+                         <option value="10">10 - October</option>
+                         <option value="11">11 - November</option>
+                         <option value="12">12 - December</option>
+                     </select>
+
+                     <select id="birth_year" required="required">
+                         <option value="2012">2012</option>
+                         <option value="2013">2013</option>
+                         <option value="2014">2014</option>
+                         <option value="2015">2015</option>
+                         <option value="2016">2016</option>
+                         <option value="2017">2017</option>
+                         <option value="2018">2018</option>
+                         <option value="2019">2019</option>
+                         <option value="2020">2020</option>
+                         <option value="2021">2021</option>
+                         <option value="2022">2022</option>
+                         <option value="2023">2023</option>
+                         <option value="2024">2024</option>
+                         <option value="2025">2025</option>
+                         <option value="2026">2026</option>
+                         <option value="2027">2027</option>
+                     </select>
+                     <br />
+                     Comments:
+                     <input type="textarea" id="comment" required="required"><br />
+                     Please check if the data entesred is correct
+                     <input type="checkbox" id="dataCheck" required="required"><br />
+                     <button id="addPerson">Add Person</button>
+                     <button id="clear">Clear</button>
+                     <p />
+                 </form>
+                 <h2>Search Hobbies</h2>
+                 <input type="text" id="hobby"> <button id="search">Search</button>
+
+                 <div id="results"></div>
+             </div>
+
+
+             <div id="passageside">
+
+                 <div id="boxes">
+                     <form>
+                         <img src="img/searchMag.png" height="40" width="40" style="float:left;">
+                         <input type="text" size="15px" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;">
+                         <input type="image" src="img/search.jpg" height="25px" width="70px" style="margin-top:10px;">
+                     </form>
+                 </div>
+
+                 <hr>
+
+                 <div id="boxes">
+                     <form>
+                         <img src="img/question.png" height="40" width="40" style="float:left;">
+                         <p><span style="margin:0px; font-size:28px;">Querry?</span> leave a message</p>
+                         <textarea rows="6" cols="19" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;"></textarea>
+                         <input type="image" src="img/clickme.png" height="50px" width="33px" style="margin-top:70px;">
+                     </form>
+                 </div>
+
+                 <hr>
+
+                 <div id="boxes">
+                     <form>
+                         <img src="img/gmail.png" height="40" width="40" style="float:left;">
+                         <p>Get recipes right in your mail box</p>
+                         <input type="text" size="15px;" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;">
+                         <input type="image" src="img/send.jpg" height="25px" width="70px" style="margin-top:10px;">
+                     </form>
+                 </div>
+
+                 <hr>
+
+                 <div id="boxes">
+                     <form>
+                         <img src="img/finger.png" height="40" width="40" style="float:left;">
+                         <h1 style="margin:0px; font-size:28px;">Become Member</h1>
+                         <p>Comment, share views and customize your experience and much more...</p>
+                         <input type="image" src="img/regi.jpg" height="25px" width="150px" style="margin-top:10px;">
+                     </form>
+                 </div>
+
+                 <hr>
+
+                 <div id="boxes">
+                     <form>
+                         <img src="img/mark.png" height="40" width="40" style="float:left;">
+                         <h1 style="margin:0px; font-size:20px;">What you think who is better cook?</h1>
+                         <input type="radio" name="vote" value="Male">Male<br>
+                         <input type="radio" name="vote" value="Female">Female<br>
+                         <input type="image" src="img/viewresult.jpg" height="25px" width="150px" style="margin-top:10px;">
+                     </form>
+                 </div>
+
+             </div><!--passage side end -->
+             <!--lower part summary menu and developer's info -->
+             <div class="bottom">
+                 <hr />
+                 <ul style="float:left;">
+                     <li><a href="#"><b>Home</b></a></li>
+                 </ul>
+
+                 <ul style="float:left;">
+
+                     <li><a href="rBreakfastMenu.html">Breakfast</a></li>
+                     <li><a href="rMenu.html">Lunch</a></li>
+                     <li><a href="rDinnerMenu.html">Dinner</a></li>
+                     <!--<li><a href="rMenu.html">Sweets</a></li>
+                                <li><a href="rMenu.html">Starters</a></li>
+            <li><a href="rMenu.html">Quick Recipes</a></li>
+            <li><a href="rMenu.html">Snacks</a></li>-->
+                 </ul>
+
+                 <ul style="float:left;">
+                     <li><a href="#"><b>Articles</b></a></li>
+                     <li><a href="artclist.html">Health</a></li>
+                     <li><a href="artclist.html">Flavors</a></li>
+                 </ul>
+
+                 <ul style="float:left;">
+                     <li><a href="#"><b>Tips</b></a></li>
+                     <li><a href="tipslist.html">Cooking Tricks</a></li>
+                     <li><a href="tipslist.html">Safety Tips</a></li>
+                 </ul>
+
+                 <ul style="float:left;">
+                     <li><a href="contactus.html"><b>Contact us</b></a></li>
+                     <li><a href="#">Email</a></li>
+                     <li><a href="#">Address</a></li>
+                     <li><a href="#">Other</a></li>
+                 </ul>
+
+                 <ul style="float:left;">
+                     <li>
+                         <a href="aboutus.html"><b>About us</b></a>
+                     </li>
+                 </ul>
+
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+
+                 <p style="float:clear;">Developed by <a href="https://www.facebook.com/buzzfeedtasty"> Team Purple</a> .</p>
+             </div>
+
+         </div>
+
+             <script>
+                 function idbOK() {
+                     return "indexedDB" in window;
+                 }
+
+                 var db;
+
+                 $(document).ready(function () {
+
+                     //No support? Go in the corner and pout.
+                     if (!idbOK()) return;
+
+                     var openRequest = indexedDB.open("ora_idb7", 1);
+
+                     openRequest.onupgradeneeded = function (e) {
+                         var thisDB = e.target.result;
+                         console.log("running onupgradeneeded");
+
+                         if (!thisDB.objectStoreNames.contains("people")) {
+                             var peopleOS = thisDB.createObjectStore("people",
+                                 { keyPath: "email" });
+                             peopleOS.createIndex("name", "name",
+                                 { unique: false });
+                             peopleOS.createIndex("hobbies", "hobbies",
+                                 { unique: false, multiEntry: true });
+                             peopleOS.createIndex("comments", "comments",
+                                 { unique: false, multiEntry: true });
+                             peopleOS.createIndex("gender", "gender",
+                                 { unique: false });
+                             peopleOS.createIndex("birthdate", "birthdate",
+                                 { unique: false });
+
+                         }
+
+                     }
+
+                     openRequest.onsuccess = function (e) {
+                         console.log("running onsuccess");
+                         db = e.target.result;
+
+                         //Start listening for button clicks
+                         $("#addPerson").on("click", addPerson);
+                         $("#search").on("click", searchPeople);
+                         $("#clear").on("click", clear);
+                     }
+
+                     openRequest.onerror = function (e) {
+                         console.log("onerror!");
+                         console.dir(e);
+                     }
+
+                 });
+
+                 function addPerson(e) {
+                     var name = $("#name").val();
+                     var email = $("#email").val();
+                     var hobbies = $("#hobbies").val();
+
+                     var gender = $("input:radio[name=option]:checked").val();
+                     var comment = $("#comment").val();
+
+                     var month = document.getElementById("birth_month");
+                     var year = document.getElementById("birth_year");
+
+                     var birthmonth = month.options[month.selectedIndex].text;
+                     var birthyear = year.options[year.selectedIndex].value;
+                     var birthdate = birthmonth.concat(birthyear);
+
+                     if (hobbies != "") hobbies = hobbies.split(",");
+
+                     console.log("About to add " + name + "/" + email);
+
+                     //Get a transaction
+                     //default for OS list is all, default for type is read
+                     var transaction = db.transaction(["people"], "readwrite");
+                     //Ask for the objectStore
+                     var store = transaction.objectStore("people");
+
+                     //Define a person
+                     var person = {
+                         name: name,
+                         email: email,
+                         hobbies: hobbies,
+                         gender: gender,
+                         comment: comment,
+                         birthdate: birthdate,
+                         created: new Date().getTime()
+                     }
+
+                     //Perform the add
+                     var request = store.add(person);
+
+                     request.onerror = function (e) {
+                         console.log("Error", e.target.error.name);
+                         //some type of error handler
+                     }
+
+                     request.onsuccess = function (e) {
+                         console.log("User Added");
+                     }
+                 }
+
+                 function searchPeople(e) {
+
+                     var hobby = $("#hobby").val();
+
+                     if (hobby == "") return;
+
+                     var range = IDBKeyRange.only(hobby);
+
+                     var transaction = db.transaction(["people"], "readonly");
+                     var store = transaction.objectStore("people");
+                     var index = store.index("hobbies");
+
+                     var s = "";
+
+                     index.openCursor(range).onsuccess = function (e) {
+                         var cursor = e.target.result;
+                         if (cursor) {
+                             s += "<h2>Key " + cursor.key + "</h2><p>";
+                             for (var field in cursor.value) {
+                                 s += field + "=" + cursor.value[field] + "<br/>";
+                             }
+                             s += "</p>";
+                             cursor.continue();
+                         }
+                     }
+
+                     transaction.oncomplete = function () {
+                         //no results?
+                         if (s === "") s = "<p>No results.</p>";
+                         $("#results").html(s);
+                     }
+
+                 }
+
+                 function clear() {
+                     document.getElementById('name').value = " ";
+                     document.getElementById('email').value = " ";
+                     document.getElementById('hobbies').value = " ";
+                     document.getElementById("maleRd").checked = false;
+                     document.getElementById("femaleRd").checked = false;
+                     document.getElementById("birth_month").selectedIndex = -1;
+                     document.getElementById("birth_year").selectedIndex = -1;
+                     document.getElementById('comment').value = " ";
+                     document.getElementById("dataCheck").checked = false;
+                    
+                 }
+
+
+
+                 //progress bar function
+
+                 $("#pro-form input").keyup(function () {
+
+                     var numValid = 0;
+                     $("#pro-form input[required]").each(function () {
+                         if (this.validity.valid) {
+                             numValid++;
+                         }
+                     });
+
+                     var progress = $("#progress"),
+                         progressMessage = $("#progress-message");
+
+                     if (numValid == 0) {
+                         progress.attr("value", "0");
+                         progressMessage.text("The form, it wants you.");
+                     }
+                     if (numValid == 1) {
+                         progress.attr("value", "25");
+                         progressMessage.text("There you go, great start!");
+                     }
+                     if (numValid == 2) {
+                         progress.attr("value", "40");
+                         progressMessage.text("Nothing can stop you now.");
+                     }
+                     if (numValid == 3) {
+                         progress.attr("value", "55");
+                         progressMessage.text("You're basically a hero, right?");
+                     }
+                     if (numValid == 4) {
+                         progress.attr("value", "100");
+                         progressMessage.text("They are going to write songs about you.");
+                     }
+
+
+                 });
+
+
+             </script>
 </body>
 </html>
+
+
