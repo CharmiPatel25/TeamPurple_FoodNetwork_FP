@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS/slideshow.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script ype="text/javascript" src="js/indebDb.js"></script>
+	<script ype="text/javascript" src="js/indebDb.js"></script>
 </head>
 <body background="img/apple.png" bgproperties="fixed">
     <div class="fb">
@@ -86,7 +87,7 @@
 			 			<form>
 			 				<img src="img/searchMag.png" height="40" width="40" style="float:left;">
 			 				<input type="text" size="15px" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;">
-			 				<input type="image" src="img/search.jpg" height="25px" width="70px" style="margin-top:10px;">
+			 				<input type="image" src="img/search.jpg" height="25px" width="70px" style="margin-top:10px;" onclick="searchBtn()">
 			 			</form>
 			 		</div>
 
@@ -97,7 +98,7 @@
 			 				<img src="img/question.png" height="40" width="40" style="float:left;">
 			 				<p><span style="margin:0px; font-size:28px;">Querry?</span> leave a message</p>
 			 				<textarea rows="6" cols="19" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;"></textarea>
-			 				<input type="image" src="img/clickme.png" height="50px" width="33px" style="margin-top:70px;">
+			 				<input type="image" src="img/clickme.png" height="50px" width="33px" style="margin-top:70px;" onclick="query()">
 			 			</form>
 			 		</div>
 
@@ -108,7 +109,7 @@
 			 				<img src="img/gmail.png" height="40" width="40" style="float:left;">
 			 				<p>Get recipes right in your mail box</p>
 			 				<input type="text" size="15px;" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;">
-			 				<input type="image" src="img/send.jpg" height="25px" width="70px" style="margin-top:10px;">
+			 				<input type="image" src="img/send.jpg" height="25px" width="70px" style="margin-top:10px;" onclick="email">
 			 			</form>
 			 		</div>
 
@@ -126,13 +127,13 @@
 			 		<hr>
 
 			 		<div id="boxes">
-			 			<form>
-			 				<img src="img/mark.png" height="40" width="40" style="float:left;">
-			 				<h1 style="margin:0px; font-size:20px;">What you think who is better cook?</h1>
-			 				<input type="radio" name="vote" value="Male">Male<br>
-			 				<input type="radio" name="vote" value="Female">Female<br>
-			 				<input type="image" src="img/viewresult.jpg" height="25px" width="150px" style="margin-top:10px;">
-			 			</form>
+						<form>
+							<img src="img/mark.png" height="40" width="40" style="float:left;">
+							<h1 style="margin:0px; font-size:20px;">What you think who is better cook?</h1>
+							<input type="radio" name="vote" value="Male">Male<br>
+							<input type="radio" name="vote" value="Female">Female<br>
+							<a href="register.html">	<input type="image" src="img/viewresult.jpg" height="25px" width="150px" style="margin-top:10px;" onclick="pollResult"></a>
+						</form>
 			 		</div>
 
 			 	</div><!--passage side end -->
