@@ -1,33 +1,21 @@
-<!doctype html>
 <html>
 <head>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script ype="text/javascript" src="js/indebDb.js"></script>
-    <script type="text/javascript" src="js/passageSide.js"></script>
-    <style>
-        .progress-wrap {
-            text-align: center;
-            font-size: 10px;
-            color: white;
-            margin: 0 0 20px 0;
-        }
-
-        progress {
-            width: 100%;
-            margin: 0 0 5px 0;
-        }
-    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Food Network</title>
+    <title>Food Network</title>
     <link rel="stylesheet" type="text/css" href="CSS/master.css">
     <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
     <link rel="stylesheet" type="text/css" href="CSS/slideshow.css">
-</head>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script ype="text/javascript" src="js/indebDb.js"></script>
 
+</head>
 <body background="img/apple.png" bgproperties="fixed">
     <div class="fb">
         <a href="https://www.facebook.com/buzzfeedtasty"><img src="img/fb1.jpg" width="200px" height="50px"></a>
     </div>
+
+
     <div class="up"></div>
 
     <ul class="home" id="upsideul">
@@ -40,6 +28,7 @@
         <li><a href="aboutus.html">ABOUT FOOD NETWORK</a></li>
     </ul><br />
          <div class="container">
+
              <div id="heading"><img src="img/logo1.jpg"></div>
              <div class="partition"></div>
              <!-- Start Navbar section -->
@@ -57,12 +46,6 @@
                              <li><a href="rBreakfastMenu.html">Breakfast</a></li>
                              <li><a href="rMenu.html">Lunch</a></li>
                              <li><a href="rDinnerMenu.html">Dinner</a></li>
-
-                             <!--
-                    <li><a href="rMenu.html">Sweets</a></li>
-                    <li><a href="rMenu.html">Starters</a></li>
-                    <li><a href="rMenu.html">Quick Recipes</a></li>
-                    <li><a href="rMenu.html">Snacks</a></li>-->
                          </ul>
                      </li>
 
@@ -73,7 +56,12 @@
 
 
                      <li>
-                         <a href="tipslist.html" style="height:24px;line-height:24px;"><span>Tips</span></a>
+                         <a href="#" style="height:24px;line-height:24px;"><span>Tips</span></a>
+
+                         <ul>
+                             <li><a href="tipslist.html">Cooking Tricks</a></li>
+                             <li><a href="tipslist.html">Safety Tips</a></li>
+                         </ul>
                      </li>
 
 
@@ -83,73 +71,59 @@
                  </ul>
              </div>
              <!-- End Navbar section -->
+             <!--passage start -->
              <div class="passage">
 
+                 <h1>RECIPE</h1>
+                 <div class="partition"></div>
+                 <div class="rpass1">
+                     <img src="img/food4.jpg" height="165px" width="200px" style="float:right;margin:5px;border: inset; border-color: #C4AAAA;">
+                     <div>
+                         <img src="img/ingre.png" height="40px" width="50px" style="float:left;;">
+                         <h2>INGREDIENTS</h2>
+                         <ul>
+                            <li>chopped greens, Lettuce</li>
+                            <li>tomatoes: sliced or chopped</li>
+                            <li>cucumber: sliced or chopped</li>
+                            <li>corn: canned, frozen, or fresh</li>
+                            <li>bell peppers: sliced thin or chopped small</li>
+                            <li>red onions: sliced thin</li>
+                            <li>Salt and Olive oil</li>
+                         </ul>
+                     </div>
+                     <hr>
+                     <h2><img src="img/procedure.png" height="50px" width="50px" style="float:left;">PREPARATION METHOD</h2>
+                     <p>
+                         Mix all the ingredients with salt well and on top add olive oil.
+                     </p>
+                     <hr>
+                     <h2 style="margin:0px;">Comment</h2>
+                     <form>
+                         <p style="margin:0px;">Not a member? <a href="#">Register</a> now to comment.</p>
+                         <textarea cols="20" rows="3"></textarea>
+                         <input type="image" src="img/click.png" height="50px" width="50px" style="margin-top:10px;">
+                     </form>
 
-                 <div class="progress-wrap">
-                     <progress max="100" value="0" id="progress"></progress>
-                     <div class="progress-message" id="progress-message">The form, it wants you.</div>
+                 </div>
+                 <div class="rpass2">
+                     <h2>you will also like this:</h2>
+                     <div>
+                         <a href="#"><h5>Chip Dip</h5></a>
+                         <img src="img/food3.jpg">
+                     </div>
+                     <div>
+                         <a href="#"><h5>Mushroom Salad</h5></a>
+                         <img src="img/food4.jpg">
+                     </div>
+                     <div>
+                         <a href="#"><h5>Pulav</h5></a>
+                         <img src="img/food5.jpg">
+                     </div>
                  </div>
 
-
-                 <h2>Register</h2>
-                 Name:  <input type="text" id="name" placeholder="Name" required="required"><br />
-                 Email Id:   <input type="email" id="email" placeholder="Email" required="required"><br />
-                 Please Enter Favrouite category :  <input type="text" id="hobbies" placeholder="Categories" required="required"><br />
-
-                 Gender :
-                 Male<input type="radio" name="option" id="maleRd" value="Male">
-                 Female<input type="radio" name="option" id="femaleRd" value="Female"><br />
-                 <label for="Birth_month" id="birthdate">Bith Date : </label>
-                 <br>
-                 <select id="birth_month">
-                     <option value="1">1 - January</option>
-                     <option value="2">2 - February</option>
-                     <option value="3">3 - March</option>
-                     <option value="4">4 - April</option>
-                     <option value="5">5 - May</option>
-                     <option value="6">6 - June</option>
-                     <option value="7">7 - July</option>
-                     <option value="8">8 - August</option>
-                     <option value="9">9 - September</option>
-                     <option value="10">10 - October</option>
-                     <option value="11">11 - November</option>
-                     <option value="12">12 - December</option>
-                 </select>
- 
-                 <select id="birth_year">
-                    <option value="2005">2005</option>
-                    <option value="2006">2006</option>
-                    <option value="2007">2007</option>
-                    <option value="2008">2008</option>
-                    <option value="2009">2009</option>
-                    <option value="2010">2010</option>
-                    <option value="2011">2011</option>
-                     <option value="2012">2012</option>
-                     <option value="2013">2013</option>
-                     <option value="2014">2014</option>
-                     <option value="2015">2015</option>
-                     <option value="2016">2016</option>
-                     <option value="2017">2017</option>
-                     <option value="2018">2018</option>
-                     <option value="2019">2019</option>
-                     <option value="2020">2020</option>
-                 </select>
-                 <br />
-                 Comments:
-                 <input type="textarea" id="comment" required="required"><br />
-                 Please check if the data entered is correct
-                 <input type="checkbox" id="dataCheck"><br />
-                 <button id="addPerson">Add Person</button>
-                 <button id="clear">Clear</button>
-                 <p />
-
-                 <h2>Search Hobbies</h2>
-                 <input type="text" id="hobby"> <button id="search">Search</button>
-
-                 <div id="results"></div>
+                 <div class="partition"></div>
              </div>
-
+             <!--passage end -->
 
              <div id="passageside">
 
@@ -168,7 +142,7 @@
                          <img src="img/question.png" height="40" width="40" style="float:left;">
                          <p><span style="margin:0px; font-size:28px;">Querry?</span> leave a message</p>
                          <textarea rows="6" cols="19" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;"></textarea>
-                         <input type="image" src="img/clickme.png" height="50px" width="33px" style="margin-top:70px;">
+                         <input type="image" src="img/click.png" height="50px" width="33px" style="margin-top:70px;">
                      </form>
                  </div>
 
@@ -176,7 +150,7 @@
 
                  <div id="boxes">
                      <form>
-                         <img src="img/gmail.png" height="40" width="40" style="float:left;">
+                         <img src="img/mail.png" height="40" width="40" style="float:left;">
                          <p>Get recipes right in your mail box</p>
                          <input type="text" size="15px;" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;">
                          <input type="image" src="img/send.jpg" height="25px" width="70px" style="margin-top:10px;">
@@ -190,7 +164,7 @@
                          <img src="img/finger.png" height="40" width="40" style="float:left;">
                          <h1 style="margin:0px; font-size:28px;">Become Member</h1>
                          <p>Comment, share views and customize your experience and much more...</p>
-                         <input type="image" src="img/regi.jpg" height="25px" width="150px" style="margin-top:10px;">
+                         <a href="register.html"><img src="img/regi.jpg" height="25px" width="150px" style="margin-top:10px;"></a>
                      </form>
                  </div>
 
@@ -206,7 +180,7 @@
                      </form>
                  </div>
 
-             </div><!--passage side end -->
+             </div><!--passageside end -->
              <!--lower part summary menu and developer's info -->
              <div class="bottom">
                  <hr />
@@ -215,14 +189,10 @@
                  </ul>
 
                  <ul style="float:left;">
-
+                     <li><a href="#"><b>Recipes</b></a></li>
                      <li><a href="rBreakfastMenu.html">Breakfast</a></li>
-                     <li><a href="rMenu.html">Lunch</a></li>
+                     <li><a href="rLunchMenu.html">Lunch</a></li>
                      <li><a href="rDinnerMenu.html">Dinner</a></li>
-                     <!--<li><a href="rMenu.html">Sweets</a></li>
-                                <li><a href="rMenu.html">Starters</a></li>
-            <li><a href="rMenu.html">Quick Recipes</a></li>
-            <li><a href="rMenu.html">Snacks</a></li>-->
                  </ul>
 
                  <ul style="float:left;">
@@ -238,9 +208,7 @@
                  </ul>
 
                  <ul style="float:left;">
-                     <li>
-                         <a href="aboutus.html"><b>About us</b></a>
-                     </li>
+                     <li><a href="aboutus.html"><b>About us</b></a></li>
                  </ul>
 
                  <br>
@@ -249,13 +217,42 @@
                  <br>
                  <br>
 
-                 <p style="float:clear;">Developed by <a href="https://www.facebook.com/buzzfeedtasty"> Team Purple</a> .</p>
+                 <p style="float:clear;">Developed by <a href="https://www.facebook.com/"> Team Purple</a> .</p>
              </div>
+             <div class="signinpop" id="signpop">
+                 <img src="img/close.png" style="float:right;" height="30px" width="30px" onclick="document.getElementById('signpop').style.display='none';">
 
+                 <br> <br>
+                 <h3>User ID (Email) :</h3>
+                 <input type="text" name="userid" id="userid" size="25px">
+                 <h3>Password :</h3>
+                 <input type="password" name="spwd" size="25px">
+                 <br>
+                 <br />
+                 <input type="button" onclick="login()" height="20px" width="100px" value="login">
+                 <br><br>
+                 <!--
+            <h3>Not a member? Register for free:</h3>
+         <a href="javascript:void(0)" onclick="document.getElementById('regipop').style.display='block';"><b>&lt &lt Register &gt &gt</b> </a>
+          -->
+             </div><!-- signinpop end -->
+
+             <div class="regipop" id="regipop">
+                 <img src="img/close.png" style="float:right;" height="30px" width="30px" onclick="document.getElementById('regipop').style.display='none';">
+                 <form action="php/signin.php" name="signin" method="post">
+                     <br> <br>
+                     <h3>Name:</h3>
+                     <input type="text" name="username" size="25px">
+                     <h3>Email:</h3>
+                     <input type="text" name="useremail" size="25px">
+                     <h3>Password :</h3>
+                     <input type="text" name="pwd1" size="25px">
+                     <h3>Confirm Password:</h3>
+                     <input type="text" name="pwd2" size="25px">
+                     <br><br>
+                     <input type="image" src="img/register.jpg" height="25px" width="150px">
+                 </form>
+             </div>
          </div>
-
-           
 </body>
 </html>
-
-
