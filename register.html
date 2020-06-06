@@ -2,6 +2,8 @@
 <html>
 <head>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script ype="text/javascript" src="js/indebDb.js"></script>
     <script type="text/javascript" src="js/passageSide.js"></script>
     <style>
@@ -16,14 +18,15 @@
             width: 100%;
             margin: 0 0 5px 0;
         }
-        
-.passage input[type=text], select, textarea {
-  width: 98%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
+
+        .passage input[type=text], select, textarea {
+            width: 98%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
         .passage input[type=email], select, textarea {
             width: 98%;
             padding: 12px;
@@ -40,52 +43,51 @@
             border-radius: 4px;
             resize: vertical;
         }
-.passage input[type=radio], textarea {
-  width: 100px;
-  height: auto;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.passage label {
- font-weight: bolder;
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
 
-.container {
-  border-radius: 5px;
-  padding: 20px;
-}
+        .passage input[type=radio], textarea {
+            width: 100px;
+            height: auto;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
+        .passage label {
+            font-weight: bolder;
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
 
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
+        .container {
+            border-radius: 5px;
+            padding: 20px;
+        }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
 
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
 
-
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Food Network</title>
