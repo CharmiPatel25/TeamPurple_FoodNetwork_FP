@@ -87,66 +87,66 @@
              </div>
              <!-- End Navbar section -->
              <div class="passage">
-                 <form name="f1" accept-charset="UTF-8" action="#" class="pro-form" id="pro-form" method="post">
-
-                     <div class="progress-wrap">
-                         <progress max="100" value="0" id="progress"></progress>
-                         <div class="progress-message" id="progress-message">The form, it wants you.</div>
-                     </div>
 
 
-                     <h2>Register</h2>
-                     <input type="text" id="name" placeholder="Name" required="required"><br />
-                     <input type="email" id="email" placeholder="Email" required="required"><br />
-                     <input type="text" id="hobbies" placeholder="Hobbies" required="required"><br />
+                 <div class="progress-wrap">
+                     <progress max="100" value="0" id="progress"></progress>
+                     <div class="progress-message" id="progress-message">The form, it wants you.</div>
+                 </div>
 
-                     Gender :
-                     Male<input type="radio" name="option" id="maleRd" value="Male">
-                     Female<input type="radio" name="option" id="femaleRd" value="Female"><br />
-                     <label for="Birth_month" id="birthdate">Bith Date</label>
-                     <br>
-                     <select id="birth_month" required="required">
-                         <option value="1">1 - January</option>
-                         <option value="2">2 - February</option>
-                         <option value="3">3 - March</option>
-                         <option value="4">4 - April</option>
-                         <option value="5">5 - May</option>
-                         <option value="6">6 - June</option>
-                         <option value="7">7 - July</option>
-                         <option value="8">8 - August</option>
-                         <option value="9">9 - September</option>
-                         <option value="10">10 - October</option>
-                         <option value="11">11 - November</option>
-                         <option value="12">12 - December</option>
-                     </select>
 
-                     <select id="birth_year" required="required">
-                         <option value="2012">2012</option>
-                         <option value="2013">2013</option>
-                         <option value="2014">2014</option>
-                         <option value="2015">2015</option>
-                         <option value="2016">2016</option>
-                         <option value="2017">2017</option>
-                         <option value="2018">2018</option>
-                         <option value="2019">2019</option>
-                         <option value="2020">2020</option>
-                         <option value="2021">2021</option>
-                         <option value="2022">2022</option>
-                         <option value="2023">2023</option>
-                         <option value="2024">2024</option>
-                         <option value="2025">2025</option>
-                         <option value="2026">2026</option>
-                         <option value="2027">2027</option>
-                     </select>
-                     <br />
-                     Comments:
-                     <input type="textarea" id="comment" required="required"><br />
-                     Please check if the data entesred is correct
-                     <input type="checkbox" id="dataCheck" required="required"><br />
-                     <button id="addPerson">Add Person</button>
-                     <button id="clear">Clear</button>
-                     <p />
-                 </form>
+                 <h2>Register</h2>
+                 Name:  <input type="text" id="name" placeholder="Name" required="required"><br />
+                 Email Id:   <input type="email" id="email" placeholder="Email" required="required"><br />
+                 Hobbies :  <input type="text" id="hobbies" placeholder="Hobbies" required="required"><br />
+
+                 Gender :
+                 Male<input type="radio" name="option" id="maleRd" value="Male">
+                 Female<input type="radio" name="option" id="femaleRd" value="Female"><br />
+                 <label for="Birth_month" id="birthdate">Bith Date : </label>
+                 <br>
+                 <select id="birth_month">
+                     <option value="1">1 - January</option>
+                     <option value="2">2 - February</option>
+                     <option value="3">3 - March</option>
+                     <option value="4">4 - April</option>
+                     <option value="5">5 - May</option>
+                     <option value="6">6 - June</option>
+                     <option value="7">7 - July</option>
+                     <option value="8">8 - August</option>
+                     <option value="9">9 - September</option>
+                     <option value="10">10 - October</option>
+                     <option value="11">11 - November</option>
+                     <option value="12">12 - December</option>
+                 </select>
+
+                 <select id="birth_year">
+                     <option value="2012">2012</option>
+                     <option value="2013">2013</option>
+                     <option value="2014">2014</option>
+                     <option value="2015">2015</option>
+                     <option value="2016">2016</option>
+                     <option value="2017">2017</option>
+                     <option value="2018">2018</option>
+                     <option value="2019">2019</option>
+                     <option value="2020">2020</option>
+                     <option value="2021">2021</option>
+                     <option value="2022">2022</option>
+                     <option value="2023">2023</option>
+                     <option value="2024">2024</option>
+                     <option value="2025">2025</option>
+                     <option value="2026">2026</option>
+                     <option value="2027">2027</option>
+                 </select>
+                 <br />
+                 Comments:
+                 <input type="textarea" id="comment" required="required"><br />
+                 Please check if the data entesred is correct
+                 <input type="checkbox" id="dataCheck"><br />
+                 <button id="addPerson">Add Person</button>
+                 <button id="clear">Clear</button>
+                 <p />
+
                  <h2>Search Hobbies</h2>
                  <input type="text" id="hobby"> <button id="search">Search</button>
 

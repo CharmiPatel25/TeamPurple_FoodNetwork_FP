@@ -7,9 +7,11 @@
     <script type="text/javascript" src="js/slideshow.js"></script>
     <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
     <link href="CSS/lightbox.css" rel="stylesheet" type="text/css" />
-    <script src="js/lightbox-2.6.min.js"></script>
+    <!--<script src="js/lightbox.js"></script>-->
     <script src="js/jQuery.min.js"></script>
     <script type="text/javascript" src="js/passageSide.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script ype="text/javascript" src="js/indebDb.js"></script>
 </head>
 <body background="img/apple.png" bgproperties="fixed">
     <div class="fb">
@@ -272,18 +274,20 @@
 
                 <div class="signinpop" id="signpop">
                     <img src="img/close.png" style="float:right;" height="30px" width="30px" onclick="document.getElementById('signpop').style.display='none';">
-                    <form action="#" name="signin" method="post">
+                    
                         <br> <br>
                         <h3>User ID (Email) :</h3>
-                        <input type="text" name="userid" size="25px">
+                        <input type="text" name="userid" id="userid" size="25px">
                         <h3>Password :</h3>
                         <input type="text" name="spwd" size="25px">
                         <br>
-                        <input type="image" src="img/signin.jpg" height="20px" width="100px">
+                       
+                         
+        <input type="button" onclick="login()" height="20px" width="100px" value="login">
                         <br><br>
                         <h3>Not a member? Register for free:</h3>
                         <a href="javascript:void(0)" onclick="document.getElementById('regipop').style.display='block';"><b>&lt &lt Register &gt &gt</b> </a>
-                    </form>
+                    
                 </div><!-- signinpop end -->
 
                 <div class="regipop" id="regipop">
@@ -303,5 +307,6 @@
                     </form>
                 </div>
             </div>
+    
 </body>
 </html>
