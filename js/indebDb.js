@@ -120,14 +120,15 @@ function searchPeople(e) {
 
     index.openCursor(range).onsuccess = function(e) {
         var cursor = e.target.result;
-        if(cursor) {
-        s += "<h2>Key " + cursor.key + "</h2><p>";
+        if (cursor) {
+
+        s +=  "Category : " + cursor.key + " " +"\n";
             for (var field in cursor.value) {
 
-        s += field + "=" + cursor.value[field] + "<br/>";
+                s += field + "=" + cursor.value[field] + " " + "\n";
 }
-            s+="</p>";
-
+            s += "" + "\n";
+            alert(s);
 cursor.continue();
         }
     }
@@ -224,6 +225,7 @@ function login(e) {
                         {
                             alert("Welcome  " + " " + user);
                             window.location.href = 'rBreakfastMenu.html';
+
                             break;
                         }
                         if (cursor.value.hobbies.includes("lunch")) {
