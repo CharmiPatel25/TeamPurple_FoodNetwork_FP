@@ -98,6 +98,8 @@ var request = store.add(person);
 
     request.onsuccess = function(e) {
         alert("User Registered !!");
+        window.location.href = 'index.html';
+
 }
 }
 
@@ -120,7 +122,8 @@ function searchPeople(e) {
         var cursor = e.target.result;
         if(cursor) {
         s += "<h2>Key " + cursor.key + "</h2><p>";
-            for(var field in cursor.value) {
+            for (var field in cursor.value) {
+
         s += field + "=" + cursor.value[field] + "<br/>";
 }
             s+="</p>";
@@ -205,18 +208,35 @@ function login(e) {
     var index = store.index("name");
 
     var s = "";
+    var hobby = $("#hobby").val();
 
     index.openCursor(range).onsuccess = function (e) {
         var cursor = e.target.result;
         if (cursor) {
 
             for (var field in cursor.value) {
+                
 
                 if (field.localeCompare("name")) {
-                    if (user.localeCompare(cursor.value[name])) {
-                        alert("Welcome" + user);
-                        window.location.href = 'rBreakfastMenu.html';
-                        break;
+                    if (user.localeCompare(cursor.value[name])) 
+                    {
+                        if (cursor.value.hobbies.includes("breakfast"))
+                        {
+                            alert("Welcome  " + " " + user);
+                            window.location.href = 'rBreakfastMenu.html';
+                            break;
+                        }
+                        if (cursor.value.hobbies.includes("lunch")) {
+                            alert("Welcome  " + " " +  user);
+                            window.location.href = 'rLunchMenu.html';
+                            break;
+                        }
+                        if (cursor.value.hobbies.includes("dinner")) {
+                            alert("Welcome  " + " " + user);
+                            window.location.href = 'rDinnerMenu.html';
+                            break;
+                        }
+                       // break;
                     }
 
 
@@ -224,6 +244,7 @@ function login(e) {
             }
         }
         if (cursor == null) {
+            alert("Please register to continue !")
             window.location.href = 'register.html';
         }
     }
