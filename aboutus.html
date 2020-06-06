@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="CSS/master.css">
 	<link rel="stylesheet" type="text/css" href="CSS/navbar.css">
 	<link rel="stylesheet" type="text/css" href="CSS/slideshow.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script ype="text/javascript" src="js/indebDb.js"></script>
 </head>
 <body background="img/apple.png" bgproperties="fixed">
     <div class="fb">
@@ -22,194 +24,196 @@
 			<li><a  href="aboutus.html">ABOUT FOOD NETWORK</a></li>
 		</ul><br/>		
 		
-	<div class="container">
-			<div id="heading"><img src="img/logo1.jpg"></div>
-			<div class="partition"></div>
-			<!-- Start Navbar section -->
-				<div id="navbarwrap">
-				<ul class="navbar">
+			 <div class="container">
+			 	<div id="heading"><img src="img/logo1.jpg"></div>
+			 	<div class="partition"></div>
+			 	<!-- Start Navbar section -->
+			 	<div id="navbarwrap">
+			 		<ul class="navbar">
 
 
-					<li><a  href="index.html" title="home" style="height:24px;line-height:24px;">Home</a></li>
+			 			<li><a href="index.html" title="home" style="height:24px;line-height:24px;">Home</a></li>
 
 
-					<li>
-						<a href="#" style="height:24px;line-height:24px;"><span>Recipes</span></a>
-						
-						<ul>
-							<li><a href="rBreakfastMenu.html">Breakfast</a></li>
-							<li><a href="rLunchMenu.html">Lunch</a></li>
-							<li><a href="rDinnerMenu.html">Dinner</a></li>
+			 			<li>
+			 				<a href="#" style="height:24px;line-height:24px;"><span>Recipes</span></a>
 
-								<!--
-			<li><a href="rMenu.html">Sweets</a></li>
-			<li><a href="rMenu.html">Starters</a></li>
+			 				<ul>
+			 					<li><a href="rBreakfastMenu.html">Breakfast</a></li>
+			 					<li><a href="rLunchMenu.html">Lunch</a></li>
+			 					<li><a href="rDinnerMenu.html">Dinner</a></li>
+
+			 					<!--
+					<li><a href="rMenu.html">Sweets</a></li>
+					<li><a href="rMenu.html">Starters</a></li>
+					<li><a href="rMenu.html">Quick Recipes</a></li>
+					<li><a href="rMenu.html">Snacks</a></li>-->
+			 				</ul>
+			 			</li>
+
+
+			 			<li>
+			 				<a href="artclist.html" style="height:24px;line-height:24px;"><span>Articles</span></a>
+			 			</li>
+
+
+			 			<li>
+			 				<a href="tipslist.html" style="height:24px;line-height:24px;"><span>Tips</span></a>
+			 			</li>
+
+
+			 			<li><a href="contactus.html" style="height:24px;line-height:24px;">Contact us</a></li>
+
+			 			<li><a href="aboutus.html" style="height:24px;line-height:24px;">About us</a></li>
+			 		</ul>
+			 	</div>
+			 	<!-- End Navbar section -->
+			 	<div class="passage">
+			 		<h1>About us</h1>
+			 		<div class="partition"></div>
+			 		<p style="text-align: justify;">
+			 			<img src="img/teampurple.jpg" height="440" width="840" style="float:left;">
+
+
+			 			FOOD NETWORK- developed by Team Purple is a unique lifestyle network and website that connects viewers to the power and joy of food. The network strives to be viewers' best friend in food and is committed to leading by teaching, inspiring, empowering and entertaining through its talent and expertise.
+			 			The food is such an art and recipe is paramount.Recipes are important because they contain the information necessary to make a dish properly. As with any set of instructions, you rely on them to give you all of the information you need. ... Recipes also help control costs. Restaurants depend on their cooks to follow recipes so their food cost stays in line.
+			 			- Team Purple
+			 		</p>
+			 	</div>
+			 	<div id="passageside">
+
+			 		<div id="boxes">
+			 			<form>
+			 				<img src="img/searchMag.png" height="40" width="40" style="float:left;">
+			 				<input type="text" size="15px" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;">
+			 				<input type="image" src="img/search.jpg" height="25px" width="70px" style="margin-top:10px;">
+			 			</form>
+			 		</div>
+
+			 		<hr>
+
+			 		<div id="boxes">
+			 			<form>
+			 				<img src="img/question.png" height="40" width="40" style="float:left;">
+			 				<p><span style="margin:0px; font-size:28px;">Querry?</span> leave a message</p>
+			 				<textarea rows="6" cols="19" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;"></textarea>
+			 				<input type="image" src="img/clickme.png" height="50px" width="33px" style="margin-top:70px;">
+			 			</form>
+			 		</div>
+
+			 		<hr>
+
+			 		<div id="boxes">
+			 			<form>
+			 				<img src="img/gmail.png" height="40" width="40" style="float:left;">
+			 				<p>Get recipes right in your mail box</p>
+			 				<input type="text" size="15px;" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;">
+			 				<input type="image" src="img/send.jpg" height="25px" width="70px" style="margin-top:10px;">
+			 			</form>
+			 		</div>
+
+			 		<hr>
+
+			 		<div id="boxes">
+			 			<form>
+			 				<img src="img/finger.png" height="40" width="40" style="float:left;">
+			 				<h1 style="margin:0px; font-size:28px;">Become Member</h1>
+			 				<p>Comment, share views and customize your experience and much more...</p>
+			 				<a href="register.html"><img src="img/regi.jpg" height="25px" width="150px" style="margin-top:10px;"></a>
+			 			</form>
+			 		</div>
+
+			 		<hr>
+
+			 		<div id="boxes">
+			 			<form>
+			 				<img src="img/mark.png" height="40" width="40" style="float:left;">
+			 				<h1 style="margin:0px; font-size:20px;">What you think who is better cook?</h1>
+			 				<input type="radio" name="vote" value="Male">Male<br>
+			 				<input type="radio" name="vote" value="Female">Female<br>
+			 				<input type="image" src="img/viewresult.jpg" height="25px" width="150px" style="margin-top:10px;">
+			 			</form>
+			 		</div>
+
+			 	</div><!--passage side end -->
+			 	<!--lower part summary menu and developer's info -->
+			 	<div class="bottom">
+			 		<hr />
+			 		<ul style="float:left;">
+			 			<li><a href="#"><b>Home</b></a></li>
+			 		</ul>
+
+			 		<ul style="float:left;">
+
+			 			<li><a href="rBreakfastMenu.html">Breakfast</a></li>
+			 			<li><a href="rLunchMenu.html">Lunch</a></li>
+			 			<li><a href="rDinnerMenu.html">Dinner</a></li>
+			 			<!--<li><a href="rMenu.html">Sweets</a></li>
+								<li><a href="rMenu.html">Starters</a></li>
 			<li><a href="rMenu.html">Quick Recipes</a></li>
 			<li><a href="rMenu.html">Snacks</a></li>-->
-						</ul>
-					</li>
+			 		</ul>
 
+			 		<ul style="float:left;">
+			 			<li><a href="artclist.html"><b>Articles</b></a></li>
+			 		</ul>
 
-					<li>
-						<a href="artclist.html" style="height:24px;line-height:24px;"><span>Articles</span></a>
-					</li>
+			 		<ul style="float:left;">
+			 			<li><a href="tipslist.html"><b>Tips</b></a></li>
+			 		</ul>
 
+			 		<ul style="float:left;">
+			 			<li><a href="contactus.html"><b>Contact us</b></a></li>
+			 		</ul>
 
-					<li>
-						<a href="tipslist.html" style="height:24px;line-height:24px;"><span>Tips</span></a>
-					</li>
+			 		<ul style="float:left;">
+			 			<li>
+			 				<a href="aboutus.html"><b>About us</b></a>
+			 			</li>
+			 		</ul>
 
+			 		<br>
+			 		<br>
+			 		<br>
+			 		<br>
+			 		<br>
 
-					<li><a href="contactus.html" style="height:24px;line-height:24px;">Contact us</a></li>
+			 		<p style="float:clear;">Developed by <a href="https://www.facebook.com/buzzfeedtasty"> Team Purple</a> .</p>
+			 	</div>
+			 	<div class="signinpop" id="signpop">
+			 		<img src="img/close.png" style="float:right;" height="30px" width="30px" onclick="document.getElementById('signpop').style.display='none';">
 
-					<li><a href="aboutus.html" style="height:24px;line-height:24px;">About us</a></li>					
-				</ul>
-				</div>
-            <!-- End Navbar section -->
-            <div class="passage">
-				<h1>About us</h1>
-                <div class="partition"></div>
-                <p style="text-align: justify;">
-                    <img src="img/teampurple.jpg" height="440" width="840" style="float:left;">
-
-
-                    FOOD NETWORK- developed by Team Purple is a unique lifestyle network and website that connects viewers to the power and joy of food. The network strives to be viewers' best friend in food and is committed to leading by teaching, inspiring, empowering and entertaining through its talent and expertise.
-                    The food is such an art and recipe is paramount.Recipes are important because they contain the information necessary to make a dish properly. As with any set of instructions, you rely on them to give you all of the information you need. ... Recipes also help control costs. Restaurants depend on their cooks to follow recipes so their food cost stays in line.
-                    - Team Purple
-                </p>				
-            </div>
-            <div id="passageside">
-
-				<div id="boxes">
-				<form>
-					<img src="img/searchMag.png" height="40" width="40" style="float:left;">
-					<input type="text" size="15px" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;">
-					<input type="image" src="img/search.jpg" height="25px" width="70px"  style="margin-top:10px;">
-				</form>
-				</div>
-
-				<hr>
-
-				<div id="boxes">
-				<form>
-					<img src="img/question.png" height="40" width="40" style="float:left;">
-					<p><span style="margin:0px; font-size:28px;">Querry?</span> leave a message</p>
-					<textarea rows="6" cols="19" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;"></textarea>
-					<input type="image" src="img/clickme.png" height="50px" width="33px"  style="margin-top:70px;">
-				</form>
-				</div>
-
-				<hr>
-
-				<div id="boxes">
-				<form>
-					<img src="img/gmail.png" height="40" width="40" style="float:left;">
-					<p>Get recipes right in your mail box</p>
-					<input type="text" size="15px;" style="float:left;margin-top:12px; margin-right:0px;margin-left:5px;">
-					<input type="image" src="img/send.jpg" height="25px" width="70px"  style="margin-top:10px;">
-				</form>
-				</div>
-
-				<hr>
-
-				<div id="boxes">
-				<form>
-					<img src="img/finger.png" height="40" width="40" style="float:left;">
-					<h1 style="margin:0px; font-size:28px;">Become Member</h1>
-					<p>Comment, share views and customize your experience and much more...</p>
-					<a href="register.html" ><img src="img/regi.jpg" height="25px" width="150px" style="margin-top:10px;"></a> 
-				</form>
-				</div>
-
-				<hr>
-
-				<div id="boxes">
-				<form>
-					<img src="img/mark.png" height="40" width="40" style="float:left;">
-					<h1 style="margin:0px; font-size:20px;">What you think who is better cook?</h1>
-					<input type="radio" name="vote" value="Male">Male<br>
-					<input type="radio" name="vote" value="Female">Female<br>
-					<input type="image" src="img/viewresult.jpg" height="25px" width="150px"  style="margin-top:10px;">
-				</form>
-				</div>
-
-				</div><!--passage side end -->
-
-				<!--lower part summary menu and developer's info -->
-			<div class="bottom">
-				<hr/>
-				<ul style="float:left;">
-					<li><a href="#"><b>Home</b></a></li>
-				</ul>
-
-				<ul style="float:left;">
-
-					<li><a href="rBreakfastMenu.html">Breakfast</a></li>
-					<li><a href="rLunchMenu.html">Lunch</a></li>
-					<li><a href="rDinnerMenu.html">Dinner</a></li>
-					<!--<li><a href="rMenu.html">Sweets</a></li>
-						<li><a href="rMenu.html">Starters</a></li>
-	<li><a href="rMenu.html">Quick Recipes</a></li>
-	<li><a href="rMenu.html">Snacks</a></li>-->
-				</ul>
-
-				<ul style="float:left;">
-					<li><a href="artclist.html"><b>Articles</b></a></li>
-				</ul>
-
-				<ul style="float:left;">
-					<li><a href ="tipslist.html"><b>Tips</b></a></li>
-				</ul>
-
-				<ul style="float:left;">
-					<li><a href="contactus.html"><b>Contact us</b></a></li>
-				</ul>
-
-				<ul style="float:left;">
-                    <li><a href="aboutus.html"><b>About us</b></a>
-                    </li>
-				</ul>
-
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-
-				<p style="float:clear;">Developed by <a href="https://www.facebook.com/buzzfeedtasty"> Team Purple</a> .</p>				
-			</div>
-			<div class="signinpop" id="signpop">
-				<img src="img/close.png" style="float:right;" height="30px" width="30px" onclick = "document.getElementById('signpop').style.display='none';">
-				<form action="#" name="signin" method="post">
-					<br> <br>
-					<h3>User ID (Email) :</h3>
-					<input type="text" name="userid" size="25px">
-					<h3>Password :</h3>
-					<input type="text" name="spwd" size="25px">
-					<br>
-					<input type="image" src="img/signin.jpg" height="20px" width="100px">
-					<br><br>
-					<h3>Not a member? Register for free:</h3>
-					<a href="javascript:void(0)" onclick = "document.getElementById('regipop').style.display='block';"><b>&lt &lt Register &gt &gt</b> </a>
-				</form>
-			</div><!-- signinpop end -->
-			<div class="regipop" id="regipop">
-				<img src="img/close.png" style="float:right;" height="30px" width="30px" onclick = "document.getElementById('regipop').style.display='none';">
-				<form action="php/signin.php" name="signin" method="post">
-					<br> <br>
-					<h3>Name:</h3>
-					<input type="text" name="username" size="25px">
-					<h3>Email:</h3>
-					<input type="text" name="useremail" size="25px">
-					<h3>Password :</h3>
-					<input type="text" name="pwd1" size="25px">
-					<h3>Confirm Password:</h3>
-					<input type="text" name="pwd2" size="25px">
-					<br><br>
-					<input type="image" src="img/register.jpg" height="25px" width="150px">
-				</form>
-			</div>
-	</div><!--End Container -->
+			 		<br> <br>
+			 		<h3>User ID (Email) :</h3>
+			 		<input type="text" name="userid" id="userid" size="25px">
+			 		<h3>Password :</h3>
+			 		<input type="password" name="spwd" size="25px">
+			 		<br>
+			 		<br />
+			 		<input type="button" onclick="login()" height="20px" width="100px" value="login">
+			 		<br><br>
+			 		<!--
+			<h3>Not a member? Register for free:</h3>
+		 <a href="javascript:void(0)" onclick="document.getElementById('regipop').style.display='block';"><b>&lt &lt Register &gt &gt</b> </a>
+		  -->
+			 	</div><!-- signinpop end -->
+			 	<div class="regipop" id="regipop">
+			 		<img src="img/close.png" style="float:right;" height="30px" width="30px" onclick="document.getElementById('regipop').style.display='none';">
+			 		<form action="php/signin.php" name="signin" method="post">
+			 			<br> <br>
+			 			<h3>Name:</h3>
+			 			<input type="text" name="username" size="25px">
+			 			<h3>Email:</h3>
+			 			<input type="text" name="useremail" size="25px">
+			 			<h3>Password :</h3>
+			 			<input type="text" name="pwd1" size="25px">
+			 			<h3>Confirm Password:</h3>
+			 			<input type="text" name="pwd2" size="25px">
+			 			<br><br>
+			 			<input type="image" src="img/register.jpg" height="25px" width="150px">
+			 		</form>
+			 	</div>
+			 </div><!--End Container -->
 </body>
 </html>
     

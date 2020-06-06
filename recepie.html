@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
     <link rel="stylesheet" type="text/css" href="CSS/slideshow.css">
     <script type="text/javascript" src="js/slideshow.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script ype="text/javascript" src="js/indebDb.js"></script>
 
 </head>
 <body background="img/apple.png" bgproperties="fixed">
@@ -39,18 +41,18 @@
 
                      <li>
                          <a href="#" style="height:24px;line-height:24px;"><span>Recipes</span></a>
-                     <ul>
+                         <ul>
                              <li><a href="rBreakfastMenu.html">Breakfast</a></li>
                              <li><a href="rLunchMenu.html">Lunch</a></li>
                              <li><a href="rDinnerMenu.html">Dinner</a></li>
-                            
+
                          </ul>
                      </li>
 
 
                      <li>
-                        <a href="artclist.html" style="height:24px;line-height:24px;"><span>Articles</span></a>
-                    </li>
+                         <a href="artclist.html" style="height:24px;line-height:24px;"><span>Articles</span></a>
+                     </li>
 
 
                      <li>
@@ -79,10 +81,10 @@
                              <li>1 tsp salt</li>
                              <li>
                                  1 tbsp oil + more for smearing on the paratha
-                                
+
                              </li>
                              <li>Water</li>
-                          
+
                          </ul>
                      </div>
                      <hr>
@@ -92,10 +94,10 @@
                          Add enough water to make a stiff but pliable dough. Set the dough aside for at least 30 minutes so it can relax and roll out easily.
                          Roll the dough on a floured surface into a rectangle, about 10 X 7 inches.
                          Brush the entire top surface lightly with some oil, then dust lightly with a little flour.
-                         <br/><br />
+                         <br /><br />
                          After you've folded and refrigerated the dough four times, roll it again into a rectangle and brush it with oil. This time, roll the dough horizontally the way you would a jelly roll.
                          When you have a cylinder, tuck the seam under and, using a knife, cut it into 10 equal portions.
-                         
+
                      </p>
                      <hr>
                      <h2 style="margin:0px;">Comment</h2>
@@ -165,7 +167,7 @@
                          <img src="img/finger.png" height="40" width="40" style="float:left;">
                          <h1 style="margin:0px; font-size:28px;">Become Member</h1>
                          <p>Comment, share views and customize your experience and much more...</p>
-                         <a href="register.html" ><img src="img/regi.jpg" height="25px" width="150px" style="margin-top:10px;"></a> 
+                         <a href="register.html"><img src="img/regi.jpg" height="25px" width="150px" style="margin-top:10px;"></a>
                      </form>
                  </div>
 
@@ -193,9 +195,9 @@
                      <li><a href="#"><b>Recipes</b></a></li>
                      <li><a href="rBreakfastMenu.html">Breakfast</a></li>
                      <li><a href="rLunchMenu.html">Lunch</a></li>
-                   
+
                      <li><a href="rDinnerMenu.html">Dinner</a></li>
-                    
+
                  </ul>
 
                  <ul style="float:left;">
@@ -227,18 +229,20 @@
              </div>
              <div class="signinpop" id="signpop">
                  <img src="img/close.png" style="float:right;" height="30px" width="30px" onclick="document.getElementById('signpop').style.display='none';">
-                 <form action="#" name="signin" method="post">
-                     <br> <br>
-                     <h3>User ID (Email) :</h3>
-                     <input type="text" name="userid" size="25px">
-                     <h3>Password :</h3>
-                     <input type="text" name="spwd" size="25px">
-                     <br>
-                     <input type="image" src="img/signin.jpg" height="20px" width="100px">
-                     <br><br>
-                     <h3>Not a member? Register for free:</h3>
-                     <a href="javascript:void(0)" onclick="document.getElementById('regipop').style.display='block';"><b>&lt &lt Register &gt &gt</b> </a>
-                 </form>
+
+                 <br> <br>
+                 <h3>User ID (Email) :</h3>
+                 <input type="text" name="userid" id="userid" size="25px">
+                 <h3>Password :</h3>
+                 <input type="password" name="spwd" size="25px">
+                 <br>
+                 <br />
+                 <input type="button" onclick="login()" height="20px" width="100px" value="login">
+                 <br><br>
+                 <!--
+            <h3>Not a member? Register for free:</h3>
+         <a href="javascript:void(0)" onclick="document.getElementById('regipop').style.display='block';"><b>&lt &lt Register &gt &gt</b> </a>
+          -->
              </div><!-- signinpop end -->
 
              <div class="regipop" id="regipop">
