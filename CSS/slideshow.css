@@ -126,3 +126,11 @@
     #slideshowabhi-buttonback:hover, #slideshowabhi-buttonforward:hover {
         opacity: 1;
     }
+    @media only screen and (max-width:620px) {
+        /* For mobile phones: */
+        .-slideswrap,.-output,.-output_1,.-output_2,.-outputwrap,.-outputbg,.-dotswrap,.-dot,.-dot:hover,.-dot.-on,.-link,.-slideimg,.-output_1
+         {
+          display: none;
+        }
+      }
+

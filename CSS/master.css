@@ -361,3 +361,16 @@ h2, h3, h4, h5, h6 {
     .artlist h2 {
         margin: 0px;
     }
+    @media only screen and (max-width:620px) {
+        /* For mobile phones: */
+        .container, .artlist, .passage,.partition,.mpass,.rpass1,.rpass2,.pages,.pass2,.pass1,.pass3,.pass4,.pass5,.signinpop,.regipop,.up,.home,.slideshow,.signin {
+          width:100%;
+        }
+        .bottom{
+            display: none;
+        }
+        #passageside
+        {
+            display: none;
+        }
+      }
